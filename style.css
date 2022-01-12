@@ -5,4 +5,19 @@
 
 }
 
+body c {
+    font-family:'FontAwesome';
+    font-size: 3rem;
+    color: var(--dark-blue);
+}
+
 /* contact page style */
+
+.contact-logo {
+    width: 20rem;
+}
+
+.logo-burger {
+    display: flex;
+    justify-content: space-between;
+}
