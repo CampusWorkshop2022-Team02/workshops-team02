@@ -5,4 +5,82 @@
 
 }
 
+
+
+/* Desktop screen style */
+
+body{
+    position: relative;
+    height: 100%;
+}
+.head_desktop{
+
+    position: fixed;
+    border: 0;
+    width: 100%;
+    height: auto;
+    left: 0rem;
+    top: -1rem;
+
+}
+
+.Logo{
+  
+    position: absolute;
+    width: 30rem;
+    height: 13rem;
+    left: 20%;
+    top: 20%;
+    z-index: 3;
+}
+
+.icon_nav{
+
+    color: #128D5A;
+    position: absolute;
+    font-size: 3rem;
+    left: 90%;
+    top: 5%;
+    z-index: 6;
+    border: 0rem;
+}
+
+.icon_bulle{
+
+    color: #128D5A;
+    position: absolute;
+    font-size: 3rem;
+    left: 90%;
+    bottom: 5%;
+    z-index: 9;
+    border: 0rem;
+
+}
+
+ 
+.image_screen{
+    position: ;
+    width: 100%;
+    height: auto;
+    left: 0rem;
+    top: -1rem;
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+
+
+
+
+
+
+
+
 /* contact page style */
+
+
+
+
+
