@@ -2,7 +2,6 @@
     --dark-blue: #0E7894;
     --dark-green: #128D5A;
     --light-blue-green: #199688;
-
 }
 
 body c {
@@ -20,4 +19,36 @@ body c {
 .logo-burger {
     display: flex;
     justify-content: space-between;
+}
+
+.contact-page {
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+    url(resources/images/contact_page_background.jpg);
+    background-position: 50%;
+}
+
+.contact-form {
+    display: grid;
+    grid-template-columns: 25% 50% 25%;
+    height: 40rem;
+    margin-top: 2rem;
+    margin-left: 1rem;
+}
+
+.contact-fields {
+    display: flex;
+    flex-flow: column wrap;
+    margin-left: 1rem;
+    flex-grow: 1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact-fields input {
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+}
+
+.message-contact-input {
+    flex-grow: 1;
 }
