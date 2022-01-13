@@ -6,9 +6,32 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contactez-nous !</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <script src="https://kit.fontawesome.com/e8ed05e2ee.js" crossorigin="anonymous"></script>
 </head>
 
-<body>
-     <img src="resources/images/logo_text.png">
+<body class="contact-page">
+    <div class="contact-logo-burger">
+        <c class="fa-solid fa-bars contact-hidden-hamburger"></c>
+        <img class="contact-logo" src="resources/images/logo_text.png">
+        <c class="fa-solid fa-bars contact-hamburger"></c>
+    </div>
+
+    <div class="contact-form">
+
+        <div class="contact-fields">
+                <label class="contact-fields-margin">Nom Prénom* :</label>
+                <input class="contact-fields-margin contact-fields-input" type="text" name="name" id="name" required>
+
+                <label class="contact-fields-margin">Email* :</label>
+                <input class="contact-fields-margin contact-fields-input" type="email" name="email" id="email" required>
+
+                <label class="contact-fields-margin">Message* :</label>
+                <textarea class="message-contact-input contact-fields-margin" cols="40" rows="5" required></textarea>
+
+                <input id="contact-button" type="submit" value="Contactez-nous !">
+        </div>
+    </div>
 </body>
+
 </html>

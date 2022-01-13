@@ -2,9 +2,91 @@
     --dark-blue: #0E7894;
     --dark-green: #128D5A;
     --light-blue-green: #199688;
-
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
+body c {
+    font-family:'FontAwesome';
+    font-size: 3rem;
+    color: var(--dark-green);
+}
+
+/* contact page style */
+
+.contact-logo {
+    width: 20rem;
+}
+
+.contact-logo-burger {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-page {
+    background-image: linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5)),
+    url(resources/images/contact_page_background.jpg);
+    background-position: 50%;
+}
+
+.contact-form {
+    display: flex;
+    /* display: grid; */
+    /* grid-template-columns: 25% 50% 25%; */
+    height: 40rem;
+    margin-top: 2rem;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contact-fields {
+    /* grid-column: 2; */
+    display: flex;
+    flex-flow: column wrap;
+    flex-grow: 1;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.contact-fields-margin {
+    margin: .5rem 0 .5rem 0;
+    /* margin-top: .5rem;
+    margin-bottom: .5rem; */
+}
+
+.contact-fields-input {
+    margin: 0 auto 0 0;
+}
+
+.message-contact-input {
+    margin-top: .5rem;
+    flex-grow: 1;
+    resize: none;
+}
+
+.contact-hamburger {
+    margin-top: 1rem;
+    margin-right: 1rem;
+}
+
+.contact-hidden-hamburger {
+    visibility: hidden;
+    margin-left: 1rem;
+}
+
+#contact-button {
+    margin: 0 15rem 0 0;
+    border-radius: 8rem;
+    width: 10rem;
+    height: 3rem;
+}
+
+#contact-button:hover {
+    background-color: var(--light-blue-green);
+    color: white;
+}
 
 
 /* Desktop screen style */
@@ -14,6 +96,7 @@ body, html{
    height: 100%;
    margin:0vmin;
 }
+
 
  
 .image_screen{
@@ -38,8 +121,8 @@ body, html{
     height: auto;
     left: 0rem;
     top: -1rem;
-
 }
+
 
 .desktop-logo{
   
@@ -52,7 +135,9 @@ body, html{
     cursor: pointer;
 }
 
+
 .desktop-nav{
+
 
     color: #128D5A;
     position: absolute;
@@ -75,8 +160,8 @@ body, html{
     cursor: pointer;
 }
 
-
 .desktop-bulle{
+
 
     color: #128D5A;
     position: absolute;
@@ -181,6 +266,7 @@ body, html{
 .about-us-title{
     margin-top: 100%;
 }
+
 
 
 
