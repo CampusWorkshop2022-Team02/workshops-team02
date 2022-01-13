@@ -4,6 +4,10 @@
     --light-blue-green: #199688;
 }
 
+body {
+    font-family: 'Poppins', sans-serif;
+}
+
 body c {
     font-family:'FontAwesome';
     font-size: 3rem;
@@ -50,6 +54,7 @@ body c {
 }
 
 .message-contact-input {
+    margin-top: .5rem;
     flex-grow: 1;
     resize: none;
 }
@@ -57,4 +62,8 @@ body c {
 .hamburger {
     margin-top: 1rem;
     margin-right: 1rem;
+}
+
+.contact-button {
+    margin: 4rem 4rem 4rem 4rem;
 }
