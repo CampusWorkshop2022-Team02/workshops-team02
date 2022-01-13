@@ -51,4 +51,10 @@ body c {
 
 .message-contact-input {
     flex-grow: 1;
+    resize: none;
+}
+
+.hamburger {
+    margin-top: 1rem;
+    margin-right: 1rem;
 }
