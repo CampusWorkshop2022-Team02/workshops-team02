@@ -102,7 +102,7 @@ body, html{
 .image_screen{
   
     width: 100%;
-    height: auto;
+    height: 60rem;
     left: 0rem;
     top: -1rem;
  
@@ -138,7 +138,7 @@ body, html{
 
 .desktop-nav{
 
-
+    position: fixed;
     color: #128D5A;
     position: absolute;
     font-size: 3rem;
@@ -264,7 +264,8 @@ body, html{
 /* A Propose de nous */
 
 .about-us-title{
-    margin-top: 100%;
+    margin-top: 5%;
+    text-align: center;
 }
 
 
