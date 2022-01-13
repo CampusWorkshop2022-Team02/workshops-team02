@@ -11,24 +11,25 @@
 </head>
 
 <body class="contact-page">
-    <div class="logo-burger">
-        <div></div>
+    <div class="contact-logo-burger">
+        <c class="fa-solid fa-bars contact-hidden-hamburger"></c>
         <img class="contact-logo" src="resources/images/logo_text.png">
-        <c class="fa-solid fa-bars hamburger"></c>
+        <c class="fa-solid fa-bars contact-hamburger"></c>
     </div>
 
     <div class="contact-form">
-            <input class="contact-button" type="submit" value="Contactez-nous !">
 
         <div class="contact-fields">
-                <label>Nom Prénom* :</label>
-                <input type="text" name="name" id="name" required>
+                <label class="contact-fields-margin">Nom Prénom* :</label>
+                <input class="contact-fields-margin contact-fields-input" type="text" name="name" id="name" required>
 
-                <label>Email* :</label>
-                <input type="email" name="email" id="email" required>
+                <label class="contact-fields-margin">Email* :</label>
+                <input class="contact-fields-margin contact-fields-input" type="email" name="email" id="email" required>
 
-                <label>Message* :</label>
-                <textarea class="message-contact-input" cols="40" rows="5" required></textarea>
+                <label class="contact-fields-margin">Message* :</label>
+                <textarea class="message-contact-input contact-fields-margin" cols="40" rows="5" required></textarea>
+
+                <input id="contact-button" type="submit" value="Contactez-nous !">
         </div>
     </div>
 </body>
