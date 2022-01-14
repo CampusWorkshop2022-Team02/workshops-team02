@@ -1,4 +1,10 @@
-import { languages } from './contact.json';
+
+// je comprends pas le code mais ça marche :/
+fetch("./contact.json")
+.then(response => {
+    return response.json();
+})
+.then(jsondata => console.log(jsondata));
 
 let pageLanguage = "english";
 
@@ -16,10 +22,14 @@ function displayPageText() {
         languageIndex = 1;
     }
 
-    nameField.textContent = languages[languageIndex]['nameFieldContent'];
-    emailField.textContent = languages[languageIndex]['emailFieldContent'];
-    messageField.textContent = languages[languageIndex]['messageFieldContent'];
-    contactButton.textContent = languages[languageIndex]['buttonFieldContent'];
+    
+
+    // nameField.textContent = 
+
+    // nameField.textContent = languages[languageIndex]['nameFieldContent'];
+    // emailField.textContent = languages[languageIndex]['emailFieldContent'];
+    // messageField.textContent = languages[languageIndex]['messageFieldContent'];
+    // contactButton.textContent = languages[languageIndex]['buttonFieldContent'];
 }
 
 displayPageText();
