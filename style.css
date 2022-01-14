@@ -91,13 +91,31 @@ body c {
 
 /* Desktop screen style */
 
-body{
-    position: relative;
-    height: 100%;
+body, html{
+   width: 100%;
+   height: 100%;
+   margin:0vmin;
 }
 
-.head_desktop{
-    position: fixed;
+
+ 
+.image_screen{
+  
+    width: 100%;
+    height: 60rem;
+    left: 0rem;
+    top: -1rem;
+ 
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    z-index: 0;
+}
+
+
+.desktop_screen{
+
+
     border: 0;
     width: 100%;
     height: auto;
@@ -105,42 +123,165 @@ body{
     top: -1rem;
 }
 
-.Logo{
+
+.desktop-logo{
+  
     position: absolute;
-    width: 30rem;
-    height: 13rem;
+    width: 30%;
+    height: auto;
     left: 20%;
-    top: 20%;
+    top: 15%;
     z-index: 3;
+    cursor: pointer;
 }
 
-.icon_nav{
+
+.desktop-nav{
+
+    position: fixed;
     color: #128D5A;
     position: absolute;
     font-size: 3rem;
-    left: 90%;
+    left: 95%;
     top: 5%;
     z-index: 6;
     border: 0rem;
 }
 
-.icon_bulle{
+.desktop-nav:hover{
+
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    left: 95%;
+    top: 5%;
+    z-index: 6;
+    border: 0rem;
+    cursor: pointer;
+}
+
+.desktop-bulle{
+
+
     color: #128D5A;
     position: absolute;
     font-size: 3rem;
-    left: 90%;
-    bottom: 5%;
+    left: 95%;
+    bottom: 10%;
     z-index: 9;
     border: 0rem;
+    cursor: pointer;
+
 }
 
-.image_screen{
-    width: 100%;
-    height: auto;
-    left: 0rem;
-    top: -1rem;
+.desktop-bulle:hover{
 
-    mix-blend-mode: normal;
-    opacity: 0.8;
-    z-index: 0;
+    color: white;
+    position: absolute;
+    font-size: 3rem;
+    left: 95%;
+    bottom: 30%;
+    z-index: 9;
+    border: 0rem;
+
 }
+
+.desktop-circle{
+
+    color: var(--dark-green);
+    font-size: 2rem;
+    top: 70%;
+    left: 45%;
+    z-index: 5;
+    position: absolute;
+    
+}
+
+.desktop-circle:hover{
+
+    border-radius: 100px;
+    transition: background, 0.5s;
+    background-color: var(--dark-green);
+    color: var(--dark-green);
+    font-size: 2rem;
+    top: 70%;
+    left: 45%;
+    z-index: 5;
+    cursor: pointer;
+    
+}
+
+.desktop-circle2{
+
+    color: var(--dark-green);
+    font-size: 2rem;
+    top: 70%;
+    left: 50%;
+    z-index: 5;
+    cursor: pointer;
+    position: absolute;
+    
+}
+
+.desktop-circle2:hover{
+    border-radius: 100px;
+    transition: background, 0.5s;
+    background-color: var(--dark-green);
+    color: var(--dark-green);
+    font-size: 2rem;
+    top: 70%;
+    left: 50%;
+    z-index: 5;
+   
+}
+
+.desktop-circle3{
+   
+    color: var(--dark-green);
+    position: absolute;
+    font-size: 2rem;
+    top: 70%;
+    left: 55%;
+    z-index: 5;
+    cursor: pointer;
+    
+}
+
+
+.desktop-circle3:hover{
+    border-radius: 100px;
+    transition: background, 0.5s;
+    background-color: var(--dark-green);
+    color: var(--dark-green);
+    font-size: 2rem;
+    top: 70%;
+    left: 55%;
+    z-index: 5;
+    
+}
+
+
+/* A Propose de nous */
+
+.about-us-title{
+    margin-top: 5%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
