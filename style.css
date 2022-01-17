@@ -13,6 +13,14 @@ body c {
     font-size: 3rem;
     color: var(--dark-green);
 }
+a{
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+}
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 249, 249);
+}
 
 /* contact page style */
 
@@ -140,7 +148,7 @@ body, html{
 .desktop-nav{
 
     position: fixed;
-    color: #128D5A;
+    color: var(--dark-green);
     font-size: 3rem;
     left: 95%;
     top: 5%;
@@ -259,6 +267,54 @@ body, html{
     z-index: 5;
     
 }
+/* Barre de Nav*/
+
+.bar-de-nav{
+    display: none;
+    width: 14rem;
+    height: 25rem;
+    position: fixed;
+    right: 1%;
+    top: 4%;
+    z-index: 8;
+    background-color: rgba(114, 110, 110, 0.877);
+    
+   
+    
+}
+.cross-nav{
+    font-size: 4rem;
+    color: var(--dark-green);
+    padding-left:6rem;
+}
+.cross-nav:hover{
+    font-size: 4rem;
+    color: var(--dark-blue);
+    padding-left:6rem;
+}
+
+.logo-nav{
+    width: 3rem;
+    padding-left: 1rem;
+
+}
+
+.liste-nav{
+    text-align: center;
+    list-style-type: none;
+    padding: 0%;
+    
+}
+
+.index-liste-nav{
+    padding-bottom: 10%;
+}
+.index-liste-nav:hover{
+    padding-bottom: 10%;
+    color: white;
+    cursor: pointer;
+}
+
 
 
 /* A Propose de nous */
@@ -505,9 +561,48 @@ body, html{
     transition: filter 1s;
 }
 
+.title-nos-offres{
+    font-size: 3rem;
+    color: var(--dark-green);
+    text-align: center;
+}
+.background-nos-offres{
+    width: 100%;
+    transform: rotate(0.29deg);
+    position: absolute;
+    z-index: 2;
+}
 
+.div-pahse-audit{
+    display: flex;
 
+}
+.i-identity {
+    position: relative;
+    z-index: 5;
+    top: 20rem;
+    left: 49%;
+    font-size: 300%;
+    color: red;
+}
 
+.i-ear {
+    position: relative;
+    z-index: 5;
+    top: 25rem;
+    left: 49%;
+    font-size: 300%;
+    color: red;
+}
+
+.i-hand {
+    position: relative;
+    z-index: 5;
+    top: 15rem;
+    left: 49%;
+    font-size: 300%;
+    color: red;
+}
 
 
 
