@@ -10,6 +10,8 @@ let mailField = document.querySelector('.mail-field');
 let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
+let logoImage = document.querySelector('.logo-nav');
+
 request.open('GET', requestURL);
 request.responseType = 'text';
 request.send();
@@ -37,8 +39,10 @@ request.onload = function () {
 
     function displayPageImages() {
         if (page === "contact.html") {
-            document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson.images;
+            document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson[0].images[0].contactBackgroundImage;
         }
+
+        logoImage.src = contactJson[0].images[0].logoWithText;
     }
 }
 
