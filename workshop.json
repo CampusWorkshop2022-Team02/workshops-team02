@@ -22,7 +22,8 @@
         "images": [
             {
                 "contactBackgroundImage": "url(resources/images/contact_page_background.jpg)",
-                "logoWithText": "resources/images/logo.png"
+                "logoWithText": "resources/images/logo_text.png",
+                "logoWithoutText": "resources/images/logo.png"
             }
         ]
     }
