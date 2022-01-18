@@ -97,6 +97,10 @@ a:hover{
     color: white;
 }
 
+.index-hamburger {
+    z-index: 50;
+}
+
 
 /* Desktop screen style */
 
@@ -295,7 +299,7 @@ body, html{
 /* Barre de Nav*/
 
 .bar-de-nav{
-    
+    display: none;
     width: 14rem;
     height: 25rem;
     position: fixed;
@@ -499,7 +503,7 @@ body, html{
 .portfolio-title{
     padding-top: 85%;
     position: absolute;
-    z-index: 6;
+    z-index: 5;
     text-align: center;
     width: 100%;
     color: var(--dark-green);
