@@ -3,7 +3,7 @@
 let requestURL = 'https://campusworkshop2022-team02.github.io/workshops-team02/workshop.json';
 let request = new XMLHttpRequest();
 
-let pageLanguage = "french"; // implémenter un bouton pour changer de langue
+let pageLanguage = "French"; // implémenter un bouton pour changer de langue
 
 let nameField = document.querySelector('.name-field');
 let mailField = document.querySelector('.mail-field');
@@ -23,9 +23,9 @@ request.onload = function () {
     function displayPageText() {
         let languageIndex;
 
-        if (pageLanguage === "french") {
+        if (pageLanguage === "French") {
             languageIndex = 0;
-        } else if (pageLanguage === "english") {
+        } else if (pageLanguage === "English") {
             languageIndex = 1;
         }
 
@@ -33,6 +33,12 @@ request.onload = function () {
         mailField.textContent = contactJson[0].languages[languageIndex].mailFieldContent;
         messageField.textContent = contactJson[0].languages[languageIndex].messageFieldContent;
         contactButton.textContent = contactJson[0].languages[languageIndex].buttonFieldContent;
+    }
+
+    function displayPageImages() {
+        if (page === "contact.html") {
+            document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson.images;
+        }
     }
 }
 

@@ -2,18 +2,25 @@
     {
         "languages": [
             {
-                "language": "french",
+                "language": "French",
                 "nameFieldContent": "Nom Prénom* :",
                 "mailFieldContent": "Adresse Email* :",
                 "messageFieldContent": "Entrez votre message* :",
                 "buttonFieldContent": "Contactez-nous !"
             },
             {
-                "language": "english",
+                "language": "English",
                 "nameFieldContent": "Last name, First name* :",
                 "mailFieldContent": "Email Address* :",
                 "messageFieldContent": "Enter your message* :",
                 "buttonFieldContent": "Contact us !"
+            }
+        ],
+
+        "images": [
+            {
+                "contactBackgroundImage": "url(resources/images/contact_page_background.jpg)",
+                "logoWithText": "resources/images/logo.png"
             }
         ]
     }
