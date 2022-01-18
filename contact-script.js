@@ -1,4 +1,4 @@
-let requestURL = 'https://campusworkshop2022-team02.github.io/workshops-team02/contact.json';
+let requestURL = 'https://campusworkshop2022-team02.github.io/workshops-team02/workshop.json';
 let request = new XMLHttpRequest();
 
 let pageLanguage = "french"; // implémenter un bouton pour changer de langue
