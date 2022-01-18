@@ -109,7 +109,8 @@ body, html{
 
  
 .image_screen{
-  
+
+    
     width: 100%;
     height: 70rem;
     left: 0rem;
@@ -119,7 +120,56 @@ body, html{
     mix-blend-mode: normal;
     opacity: 0.8;
     z-index: 0;
+
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; 
+   
 }
+.image_screen2{
+    display: none;
+    width: 100%;
+    height: 70rem;
+    left: 0rem;
+    top: -1rem;
+ 
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    z-index: 0;
+
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; 
+    
+}
+.image_screen3{
+    display: none;
+    width: 100%;
+    height: 70rem;
+    left: 0rem;
+    top: -1rem;
+ 
+
+    mix-blend-mode: normal;
+    opacity: 0.8;
+    z-index: 0;
+
+    filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; 
+    
+}
+
 
 
 .desktop_screen{
@@ -461,6 +511,7 @@ body, html{
     display: flex;
     padding-top: 100%;
     top: 100%;
+    cursor: pointer;
 }
 .mise-en-page-portfolio{
     width: 59%;
@@ -564,7 +615,7 @@ body, html{
     height: auto;
 }
 .div-phase-audit{
-
+   
    padding: 0%;
    position: absolute;
    width: 100%;
@@ -659,8 +710,81 @@ body, html{
 }
 
 
+.div-phase-conseption{
+    display: none;
+   padding: 0%;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 460%;
+   font-size: 110%;
+
+
+}
+.i-laptop{
+    position: relative;
+    z-index: 5;
+    top: 23%;
+    left: 49%;
+    font-size: 300%;
+    color: red;
+}
 
 
 
+.text-laptop{
+    position: relative;
+    z-index: 5;
+    top: 25%;
+    padding: 0%;
+    text-align: center;
+    left: 36%;
+    width: 30%;
+
+}
+
+.i-dollar{
+    position: relative;
+    z-index: 5;
+    top:25%;
+    left: 49%;
+    font-size: 300%;
+    color: red;
+
+}
+
+.text-dollar{
+    position: relative;
+    z-index: 5;
+    top: 25%;
+    padding: 0%;
+    text-align: center;
+    left: 36%;
+    width: 30%;
 
 
+}
+
+.suivant-button{
+    position: absolute;
+    z-index: 6;
+    width: 5rem;
+    background-color: var(--dark-green);
+    border-radius: 40px;
+    text-align: center;
+    top: 530%;
+    left: 70%;
+}
+
+.suivant-button:hover{
+    position: absolute;
+    z-index: 6;
+    width: 5rem;
+    background-color: var(--dark-green);
+    border-radius: 40px;
+    text-align: center;
+    color: white;
+    top: 530%;
+    left: 70%;
+    cursor: pointer;
+}
