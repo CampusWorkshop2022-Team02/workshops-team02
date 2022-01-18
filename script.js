@@ -11,7 +11,6 @@ let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
 let logoNavImage = document.querySelector('.logo-nav-image');
-let logo
 
 request.open('GET', requestURL);
 request.responseType = 'text';
@@ -44,7 +43,7 @@ request.onload = function () {
             document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson[1].images[0].contactBackgroundImage;
         }
 
-        logoImage.src = contactJson[1].images[0].logoWithText;
+        logoImage.src = contactJson[1].images[0].logoWithoutText;
         logoNavImage.src = contactJson[1].images[0].logoWithoutText;
     }
 }
