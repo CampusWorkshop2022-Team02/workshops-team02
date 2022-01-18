@@ -168,31 +168,6 @@ body, html{
     cursor: pointer;
 }
 
-.desktop-bulle{
-
-
-    color: #128D5A;
-    position: fixed;
-    font-size: 3rem;
-    left: 95%;
-    bottom: 10%;
-    z-index: 9;
-    border: 0rem;
-    cursor: pointer;
-
-}
-
-.desktop-bulle:hover{
-
-    color: var(--dark-blue);
-    position: fixed;
-    font-size: 3rem;
-    left: 95%;
-    bottom: 10%;
-    z-index: 9;
-    border: 1rem;
-
-}
 
 .desktop-circle{
 
@@ -270,7 +245,7 @@ body, html{
 /* Barre de Nav*/
 
 .bar-de-nav{
-   
+    
     width: 14rem;
     height: 25rem;
     position: fixed;
@@ -292,6 +267,7 @@ body, html{
     font-size: 4rem;
     color: var(--dark-blue);
     padding-left:6rem;
+    cursor: pointer;
 }
 
 .logo-nav{
@@ -562,10 +538,18 @@ body, html{
     transition: filter 1s;
 }
 
+
+
+
+/*Nos offres*/
 .title-nos-offres{
     font-size: 3rem;
     color: var(--dark-green);
     text-align: center;
+    padding-top: 5%;
+    position: absolute;
+    z-index: 6;
+    width: 100%;
 }
 .background-nos-offres{
     width: 100%;
@@ -574,44 +558,105 @@ body, html{
     z-index: 2;
 }
 
-.div-pahse-audit{
-    display: flex;
+.nos-offres-screen{
+    padding: 0%;
+    width: 100%;
+    height: auto;
+}
+.div-phase-audit{
+
+   padding: 0%;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 460%;
+   font-size: 110%;
 
 }
+
 .i-identity {
     position: relative;
     z-index: 5;
-    top: 20rem;
+    top: 23%;
     left: 49%;
     font-size: 300%;
     color: red;
+}
+.text-identity{
+    position: relative;
+    z-index: 5;
+    top: 25%;
+    padding: 0%;
+    text-align: center;
+    
 }
 
 .i-ear {
     position: relative;
     z-index: 5;
-    top: 25rem;
+    top:25%;
     left: 49%;
     font-size: 300%;
     color: red;
+}
+.text-ear{
+    position: relative;
+    z-index: 5;
+    top: 25%;
+    padding: 0%;
+    text-align: center;
+  
+    
 }
 
 .i-hand {
     position: relative;
     z-index: 5;
-    top: 15rem;
+    top:25%;
     left: 49%;
     font-size: 300%;
     color: red;
+}
+.text-hand{
+    position: relative;
+    z-index: 5;
+    top: 25%;
+    padding: 0%;
+    text-align: center;
 }
 
 
 
 
 
-
-
-
+.div-phase-conseil {
+    display: none;
+    padding: 0%;
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 460%;
+   font-size: 110%;
+}
+.i-conseil{
+    position: relative;
+    z-index: 5;
+    top: 23%;
+    left: 49%;
+    font-size: 500%;
+    color: red;
+}
+.text-conseil{
+    position: relative;
+    z-index: 5;
+    top: 30%;
+    padding: 0%;
+    text-align: center;
+    width: 50%;
+    left: 25%;
+    
+    
+}
 
 
 
