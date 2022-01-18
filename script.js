@@ -1,4 +1,4 @@
-// script contact
+// JSON
 
 let requestURL = 'https://campusworkshop2022-team02.github.io/workshops-team02/workshop.json';
 let request = new XMLHttpRequest();
@@ -36,7 +36,7 @@ request.onload = function () {
     }
 }
 
-// script
+// nav bar
 
 let path = window.location.pathname;
 let page = path.split("/").pop();

@@ -89,7 +89,11 @@ a:hover{
     margin: 0 15rem 0 0;
     border-radius: 8rem;
     width: 10rem;
-    height: 3rem;
+    /* height: 3rem; */
+    background-color: white;
+    text-align: center;
+    line-height: 200%;
+    border: 1px solid black;
 }
 
 #contact-button:hover {
@@ -603,7 +607,7 @@ body, html{
     text-align: center;
     padding-top: 5%;
     position: absolute;
-    z-index: 6;
+    z-index: 5;
     width: 100%;
 }
 .background-nos-offres{
