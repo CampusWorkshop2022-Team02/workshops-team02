@@ -38,6 +38,10 @@ request.onload = function () {
 
 // script
 
+let path = window.location.pathname;
+let page = path.split("/").pop();
+console.log(page);
+
 let indexHamburger = document.querySelector('.index-hamburger');
 let indexCross = document.querySelector('.index-cross');
 
@@ -49,19 +53,34 @@ indexCross.addEventListener('click', closeNavBar);
 function openNavBar() {
     if (navBar.style.display === 'none') {
         navBar.style.display = 'block';
-        indexHamburger.style.display = 'none';
+        if (page === "contact.html") {
+            indexHamburger.style.visibility = 'hidden';
+        } else {
+            indexHamburger.style.display = 'none';
+        }
     } else {
         navBar.style.display = 'none';
-        indexHamburger.style.display = 'block';
+        if (page === "contact.html") {
+            indexHamburger.style.visibility = 'visible';
+        } else {
+            indexHamburger.style.display = 'block';
+        }
     }
 }
 
 function closeNavBar() {
     if (navBar.style.display === 'block') {
         navBar.style.display = 'none';
+        if (page === "contact.html") {
+            indexHamburger.style.visibility = 'visible';
+        }
         indexHamburger.style.display = 'block';
     } else {
         navBar.style.display = 'block';
-        indexHamburger.style.display = 'none';
+        if (page === "contact.html") {
+            indexHamburger.style.visibility = 'hidden';
+        } else {
+            indexHamburger.style.display = 'none';
+        }
     }
 }
