@@ -40,7 +40,6 @@ request.onload = function () {
 
 let path = window.location.pathname;
 let page = path.split("/").pop();
-console.log(page);
 
 let indexHamburger = document.querySelector('.index-hamburger');
 let indexCross = document.querySelector('.index-cross');
