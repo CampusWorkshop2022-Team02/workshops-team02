@@ -3,17 +3,37 @@
         "languages": [
             {
                 "language": "French",
+
                 "nameFieldContent": "Nom Prénom* :",
                 "mailFieldContent": "Adresse Email* :",
                 "messageFieldContent": "Entrez votre message* :",
-                "buttonFieldContent": "Contactez-nous !"
+                "buttonFieldContent": "Contactez-nous !",
+
+                
+
+                "aboutFieldContent": "À propos",
+                "portfolioFieldContent": "Notre portfolio",
+                "offersFieldContent": "Nos offres",
+                "blogFieldContent": "Notre blog",
+                "contactFieldContent": "Nous contacter",
+                "CGUFieldContent": "Conditions générales"
             },
             {
                 "language": "English",
+
                 "nameFieldContent": "Last name, First name* :",
                 "mailFieldContent": "Email Address* :",
                 "messageFieldContent": "Enter your message* :",
-                "buttonFieldContent": "Contact us !"
+                "buttonFieldContent": "Contact us !",
+
+
+
+                "aboutFieldContent": "About us",
+                "portfolioFieldContent": "Our portfolio",
+                "offersFieldContent": "Our offers",
+                "blogFieldContent": "Our blog",
+                "contactFieldContent": "Contact us",
+                "CGUFieldContent": "General terms"
             }
         ]
     },

@@ -10,8 +10,10 @@ let mailField = document.querySelector('.mail-field');
 let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
-let logoNavImage = document.querySelector('.logo-nav-image');
-let logoImage = document.querySelector('.logo-image');
+let aboutFieldNav = document.querySelectorAll('.about-us-navbar');
+
+let logoNavImage = document.querySelectorAll('.logo-nav-image');
+let logoImage = document.querySelectorAll('.logo-image');
 
 request.open('GET', requestURL);
 request.responseType = 'text';
@@ -25,6 +27,7 @@ request.onload = function () {
     displayPageImages();
 
     console.log(contactJson[1].images[0].logoWithoutText);
+    console.log(logoNavImage[0]);
 
     function displayPageText() {
         let languageIndex;
@@ -35,22 +38,25 @@ request.onload = function () {
             languageIndex = 1;
         }
 
-        nameField.textContent = contactJson[0].languages[languageIndex].nameFieldContent;
-        mailField.textContent = contactJson[0].languages[languageIndex].mailFieldContent;
-        messageField.textContent = contactJson[0].languages[languageIndex].messageFieldContent;
-        contactButton.textContent = contactJson[0].languages[languageIndex].buttonFieldContent;
+        try {
+            nameField.textContent = contactJson[0].languages[languageIndex].nameFieldContent;
+            mailField.textContent = contactJson[0].languages[languageIndex].mailFieldContent;
+            messageField.textContent = contactJson[0].languages[languageIndex].messageFieldContent;
+            contactButton.textContent = contactJson[0].languages[languageIndex].buttonFieldContent;
+        } catch (error) {
+            console.log('script ignoré, car pas sur la page de contact');
+        }
+
+        aboutFieldNav.textContent = contactJson[0].languages[languageIndex].aboutFieldContent;
     }
 
     function displayPageImages() {
-        logoImage.setAttribute("src", contactJson[1].images[0].logoWithText);
-        logoNavImage.setAttribute("src", contactJson[1].images[0].logoWithoutText);
+        logoImage[0].setAttribute("src", contactJson[1].images[0].logoWithText);
+        logoNavImage[0].setAttribute("src", contactJson[1].images[0].logoWithoutText);
 
         if (page === "contact.html") {
             document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson[1].images[0].contactBackgroundImage;
         }
-
-        // logoImage.src = contactJson[1].images[0].logoWithText;
-        // logoNavImage.src = contactJson[1].images[0].logoWithoutText;
     }
 }
 
@@ -64,10 +70,10 @@ let indexCross = document.querySelector('.index-cross');
 
 let navBar = document.querySelector('.bar-de-nav');
 
-indexHamburger.addEventListener('click', openNavBar);
-indexCross.addEventListener('click', closeNavBar);
+indexHamburger.addEventListener('click', toggleNavBar);
+indexCross.addEventListener('click', toggleNavBar);
 
-function openNavBar() {
+function toggleNavBar() {
     if (navBar.style.display === 'none') {
         navBar.style.display = 'block';
         if (page === "contact.html") {
@@ -81,23 +87,6 @@ function openNavBar() {
             indexHamburger.style.visibility = 'visible';
         } else {
             indexHamburger.style.display = 'block';
-        }
-    }
-}
-
-function closeNavBar() {
-    if (navBar.style.display === 'block') {
-        navBar.style.display = 'none';
-        if (page === "contact.html") {
-            indexHamburger.style.visibility = 'visible';
-        }
-        indexHamburger.style.display = 'block';
-    } else {
-        navBar.style.display = 'block';
-        if (page === "contact.html") {
-            indexHamburger.style.visibility = 'hidden';
-        } else {
-            indexHamburger.style.display = 'none';
         }
     }
 }

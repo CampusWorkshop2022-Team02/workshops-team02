@@ -99,6 +99,7 @@ a:hover{
 #contact-button:hover {
     background-color: var(--light-blue-green);
     color: white;
+    cursor: pointer;
 }
 
 .index-hamburger {
