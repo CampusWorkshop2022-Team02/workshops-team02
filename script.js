@@ -11,6 +11,7 @@ let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
 let logoNavImage = document.querySelector('.logo-nav-image');
+let logoImage = document.querySelector('.logo-image');
 
 request.open('GET', requestURL);
 request.responseType = 'text';
@@ -22,6 +23,8 @@ request.onload = function () {
     console.log(contactJson);
     displayPageText();
     displayPageImages();
+
+    console.log(contactJson[1].images[0].logoWithoutText);
 
     function displayPageText() {
         let languageIndex;
@@ -39,12 +42,15 @@ request.onload = function () {
     }
 
     function displayPageImages() {
+        logoImage.setAttribute("src", contactJson[1].images[0].logoWithText);
+        logoNavImage.setAttribute("src", contactJson[1].images[0].logoWithoutText);
+
         if (page === "contact.html") {
             document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson[1].images[0].contactBackgroundImage;
         }
 
-        logoImage.src = contactJson[1].images[0].logoWithoutText;
-        logoNavImage.src = contactJson[1].images[0].logoWithoutText;
+        // logoImage.src = contactJson[1].images[0].logoWithText;
+        // logoNavImage.src = contactJson[1].images[0].logoWithoutText;
     }
 }
 
