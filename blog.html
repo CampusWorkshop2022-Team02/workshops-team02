@@ -116,7 +116,70 @@
             </div>
       
 
-        
+            <p id="demo"></p>
+
+            <script>
+            const txt = '{"name":"John", "age":30, "city":"New York"}'
+            const obj = JSON.parse(txt);
+            document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+            </script>   
+            
+            <p id="image1"> </p>
+            <script>
+            const image1 = '{"src":"/resources/images/tezos-3-88RFifBno-unsplash.jpg"}'
+            const img = JSON.parse(image1);
+            document.getElementById("image1").innerHTML = img.url + ", " ;
+            </script>
+            
+            
+            
+            <!---------footer ----------------->
+            <footer class="footer">
+                <div class="container">
+                    <div class="row">
+    
+                        <div class="footer-col">
+                            <h4>Coodonnées & adresse</h4>
+                            
+                            <ul>
+                                <li><a href="#">06 00 00 00 00</a></li>
+                                <li><a href="#">email.toi@hotlook.com</a></li>
+                                <li><a href="#">Clement Roualin</a></li>
+                                <li><a href="#">Digitale Consultant</a></li>
+                                <li><a href="#">6 avenue de peterborough</a></li>
+                                <li><a href="#">49000 Angers</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>Digitale Consultant</h4>
+                            <ul>
+                                <li><a href="#">Digitale Consultant est la marque qui réunit les meilleurs indépendants et entreprise du Web pour livrer un service, personnalisé et de bout en boutqui s'adapte à la structure et au portefeuille de ses clients.</a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>Nos services</h4>
+                            <ul>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                                <li><a href="#"></a></li>
+                            </ul>
+                        </div>
+    
+                        <div class="footer-col">
+                            <h4>Subscribe</h4>
+                            <ul>
+                                <li><a href="#">Subscribe</a></li>
+                            </ul>
+    
+                        </div>
+                    </div>
+                </div>
+    
+            </footer>
+    
     </section>
 </body>
 
