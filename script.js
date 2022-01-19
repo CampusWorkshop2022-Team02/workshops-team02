@@ -33,6 +33,9 @@ let ourOffers = document.querySelector('.title-nos-offres');
 let ourOffersFirstPara = document.querySelector('.text-identity');
 let ourOffersSecondPara = document.querySelector('.text-ear');
 let ourOffersThirdPara = document.querySelector('.text-hand');
+let textConseil = document.querySelector('.text-conseil');
+let textLaptop = document.querySelector('.text-laptop');
+let textDollar = document.querySelector('.text-dollar');
 
 
 let logoNavImage = document.querySelectorAll('.logo-nav-image');
@@ -87,6 +90,9 @@ request.onload = function () {
             ourOffersFirstPara.textContent = contactJson[0].languages[languageIndex].ourOffersFirstPara;
             ourOffersSecondPara.textContent = contactJson[0].languages[languageIndex].ourOffersSecondPara;
             ourOffersThirdPara.textContent = contactJson[0].languages[languageIndex].ourOffersThirdPara;
+            textConseil.textContent = contactJson[0].languages[languageIndex].textConseil;
+            textLaptop.textContent = contactJson[0].languages[languageIndex].textLaptop;
+            textDollar.textContent = contactJson[0].languages[languageIndex].textDollar;
 
         } catch (error) {
             console.log("script ignoré, car par sur la page d'index");
