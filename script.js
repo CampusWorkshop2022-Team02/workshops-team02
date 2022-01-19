@@ -37,6 +37,13 @@ let textConseil = document.querySelector('.text-conseil');
 let textLaptop = document.querySelector('.text-laptop');
 let textDollar = document.querySelector('.text-dollar');
 
+//language selectors
+let iconFr = document.querySelectorAll('.icon-fr');
+let iconEn = document.querySelectorAll('.icon-en');
+
+iconFr[0].addEventListener('click', changeLanguage.bind("fr"));
+iconEn[0].addEventListener('click', changeLanguage.bind("en"));
+
 
 let logoNavImage = document.querySelectorAll('.logo-nav-image');
 let logoImage = document.querySelectorAll('.logo-image');
@@ -137,6 +144,17 @@ function toggleNavBar() {
         } else {
             indexHamburger.style.display = 'block';
         }
+    }
+}
+
+function changeLanguage(selectedLanguage) {
+    console.log('egg');
+    if (selectedLanguage === "fr") {
+        pageLanguage = "French";
+        console.log('fr');
+    } else if (selectedLanguage === "en") {
+        pageLanguage = "English";
+        console.log('en');
     }
 }
 

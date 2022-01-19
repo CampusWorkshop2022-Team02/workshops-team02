@@ -22,6 +22,11 @@ a:hover{
     color: rgb(255, 249, 249);
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* contact page style */
 
 .contact-logo {
@@ -798,3 +803,10 @@ body, html{
     cursor: pointer;
 }
 
+.lang-icon {
+    width: 15%;
+}
+
+.lang-icon:hover {
+    cursor: pointer;
+}
