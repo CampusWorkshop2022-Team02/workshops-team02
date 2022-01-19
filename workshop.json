@@ -16,7 +16,7 @@
                 "aboutUsTitle": "À propos de nous",
                 "aboutUsFirstPara": "Digital Consultant est la marque qui réunit les meilleurs indépendants et entreprises du Web pour livrer un service",
                 "aboutUsSecondPara": "Livrer un service personnalisé et de bout en bout qui s'adapte à la structure et au portefeuille de ses clients",
-                "OurPartners": "Nos partenaires"
+                "ourPartners": "Nos partenaires"
             },
             {
                 "language": "English",
@@ -33,7 +33,7 @@
                 "aboutUsTitle": "About our company",
                 "aboutUsFirstPara": "Digital Consultant as a team is putting together the best freelancers and Web companies to deliver a service",
                 "aboutUsSecondPara": "Deliver a personalized service from scratch, adapting the client's structure and wallet",
-                "OurPartners": "Our partners"
+                "ourPartners": "Our partners"
             }
         ]
     },
