@@ -15,7 +15,7 @@
 
     <nav class="bar-de-nav">
 
-        <a href="#desktop"><img class="logo-nav" src="resources/images/logo.png"></a>
+        <a href="index.html#desktop"><img class="logo-nav-image" src="resources/images/logo.png"></a>
         <i class="cross-nav fas fa-times index-cross"></i>
         <ul class="liste-nav">
             <li class="index-liste-nav" ><a href="index.html#about-us">A propos</a> </li>
@@ -39,16 +39,17 @@
     <div class="contact-form">
 
         <div class="contact-fields">
-                <label class="contact-fields-margin name-field">Nom Prénom* :</label>
+                <label class="contact-fields-margin name-field">nameField</label>
                 <input class="contact-fields-margin contact-fields-input" type="text" name="name" id="name" required>
 
-                <label class="contact-fields-margin mail-field">Email* :</label>
+                <label class="contact-fields-margin mail-field">mailField</label>
                 <input class="contact-fields-margin contact-fields-input" type="email" name="email" id="email" required>
 
-                <label class="contact-fields-margin message-field">Message* :</label>
+                <label class="contact-fields-margin message-field">messageField</label>
                 <textarea class="message-contact-input contact-fields-margin" cols="40" rows="5" required></textarea>
 
-                <input id="contact-button" type="submit" value="Contactez-nous !">
+                <label id="contact-button"></label>
+                <!-- <input id="contact-button" type="submit"></input> -->
         </div>
     </div>
     <script type="text/json" src="workshop.json"></script>

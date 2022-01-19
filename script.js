@@ -1,14 +1,16 @@
-// script contact
+// JSON
 
 let requestURL = 'https://campusworkshop2022-team02.github.io/workshops-team02/workshop.json';
 let request = new XMLHttpRequest();
 
-let pageLanguage = "french"; // implémenter un bouton pour changer de langue
+let pageLanguage = "French"; // implémenter un bouton pour changer de langue
 
 let nameField = document.querySelector('.name-field');
 let mailField = document.querySelector('.mail-field');
 let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
+
+let logoNavImage = document.querySelector('.logo-nav-image');
 
 request.open('GET', requestURL);
 request.responseType = 'text';
@@ -19,13 +21,14 @@ request.onload = function () {
     let contactJson = JSON.parse(contactJsonText);
     console.log(contactJson);
     displayPageText();
+    displayPageImages();
 
     function displayPageText() {
         let languageIndex;
 
-        if (pageLanguage === "french") {
+        if (pageLanguage === "French") {
             languageIndex = 0;
-        } else if (pageLanguage === "english") {
+        } else if (pageLanguage === "English") {
             languageIndex = 1;
         }
 
@@ -34,9 +37,18 @@ request.onload = function () {
         messageField.textContent = contactJson[0].languages[languageIndex].messageFieldContent;
         contactButton.textContent = contactJson[0].languages[languageIndex].buttonFieldContent;
     }
+
+    function displayPageImages() {
+        if (page === "contact.html") {
+            document.body.style.backgroundImage = "linear-gradient(rgba(255, 255, 255, .5), rgba(255, 255, 255, .5))," + contactJson[1].images[0].contactBackgroundImage;
+        }
+
+        logoImage.src = contactJson[1].images[0].logoWithoutText;
+        logoNavImage.src = contactJson[1].images[0].logoWithoutText;
+    }
 }
 
-// script
+// nav bar
 
 let path = window.location.pathname;
 let page = path.split("/").pop();
