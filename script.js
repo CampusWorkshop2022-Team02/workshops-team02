@@ -83,3 +83,56 @@ function closeNavBar() {
         }
     }
 }
+
+//image landing screen
+
+
+// let imageScreen = document.querySelector('.image-screen');
+// let imageScreen2 = document.querySelector('.image-screen2');
+// let imageScreen3 = document.querySelector('.image-screen3');
+
+// let desktopCircle = document.querySelector('.desktop-circle');
+// let desktopCircle2 = document.querySelector('.desktop-circle2');
+// let desktopCircle3 = document.querySelector('.desktop-circle3');
+
+// desktopCircle.addEventListener('click', changeToImage1);
+// desktopCircle2.addEventListener('click', changeToImage2);
+// desktopCircle3.addEventListener('click', changeToImage3);
+
+// function changeToImage1 () {
+//     if (imageScreen.style.display === 'none') {
+//         imageScreen2.style.display = 'none';
+//         imageScreen3.style.display ='none';
+//         imageScreen.style.display = '';
+//     }
+        
+// }
+
+// function changeToImage2 () {
+//     if (imageScreen2.style.display === 'none') {
+       
+//         imageScreen3.style.display ='none';
+//         imageScreen.style.display = 'none';
+//         imageScreen2.style.display = '';
+//     }
+        
+// }
+
+// function changeToImage3 () {
+//     if (imageScreen3.style.display === 'none') {
+//         imageScreen2.style.display = 'none';
+//         imageScreen.style.display = 'none';
+//         imageScreen3.style.display ='';
+        
+//     }
+        
+// }
+
+
+
+
+
+
+//google ajouter supprimer class (activate) Tu donnes la class activate sur le bouton ou tu appuies
+//Tu récupère la liste de class de ce bouton et tu regardes si c'est desktop-circle1 2 ou 3
+//si par exemple le bouton activé c'est le bouton2, tu enleve le display none de l'image avec la class image-screen3*//
