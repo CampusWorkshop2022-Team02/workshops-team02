@@ -5,17 +5,35 @@ let request = new XMLHttpRequest();
 
 let pageLanguage = "French"; // implémenter un bouton pour changer de langue
 
+// contact page selectors
 let nameField = document.querySelector('.name-field');
 let mailField = document.querySelector('.mail-field');
 let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
+// navbar selectors
 let aboutFieldNav = document.querySelectorAll('.about-us-navbar');
 let portfolioFieldNav = document.querySelectorAll('.portfolio-navbar');
 let offersFieldNav = document.querySelectorAll('.offers-navbar');
 let blogFieldNav = document.querySelectorAll('.blog-navbar');
 let contactFieldNav = document.querySelectorAll('.contact-navbar');
 let CGUFieldNav = document.querySelectorAll('.cgu-navbar');
+
+// about selectors
+let aboutUsTitle = document.querySelector('.about-us-title');
+let aboutUsFirstPara = document.querySelector('.text1-about-us');
+let aboutUsSecondPara = document.querySelector('.text2-about-us');
+let ourPartners = document.querySelector('.partenaire-title');
+
+// portfolio selectors
+let portfolioTitle = document.querySelector('.portfolio-title');
+
+// offers selectors
+let ourOffers = document.querySelector('.title-nos-offres');
+let ourOffersFirstPara = document.querySelector('.text-identity');
+let ourOffersSecondPara = document.querySelector('.text-ear');
+let ourOffersThirdPara = document.querySelector('.text-hand');
+
 
 let logoNavImage = document.querySelectorAll('.logo-nav-image');
 let logoImage = document.querySelectorAll('.logo-image');
@@ -40,6 +58,7 @@ request.onload = function () {
             languageIndex = 1;
         }
 
+        // contact page display
         try {
             nameField.textContent = contactJson[0].languages[languageIndex].nameFieldContent;
             mailField.textContent = contactJson[0].languages[languageIndex].mailFieldContent;
@@ -49,12 +68,29 @@ request.onload = function () {
             console.log('script ignoré, car pas sur la page de contact');
         }
 
+        // navbar display
         aboutFieldNav[0].textContent = contactJson[0].languages[languageIndex].aboutFieldContent;
         portfolioFieldNav[0].textContent = contactJson[0].languages[languageIndex].portfolioFieldContent;
         offersFieldNav[0].textContent = contactJson[0].languages[languageIndex].offersFieldContent;
         blogFieldNav[0].textContent = contactJson[0].languages[languageIndex].blogFieldContent;
         contactFieldNav[0].textContent = contactJson[0].languages[languageIndex].contactFieldContent;
         CGUFieldNav[0].textContent = contactJson[0].languages[languageIndex].CGUFieldContent;
+
+        // about, portfolio, offers display
+        try {
+            aboutUsTitle.textContent = contactJson[0].languages[languageIndex].aboutUsTitle;
+            aboutUsFirstPara.textContent = contactJson[0].languages[languageIndex].aboutUsFirstPara;
+            aboutUsSecondPara.textContent = contactJson[0].languages[languageIndex].aboutUsSecondPara;
+            ourPartners.textContent = contactJson[0].languages[languageIndex].ourPartners;
+            portfolioTitle.textContent = contactJson[0].languages[languageIndex].portfolioFieldContent;
+            ourOffers.textContent = contactJson[0].languages[languageIndex].offersFieldContent;
+            ourOffersFirstPara.textContent = contactJson[0].languages[languageIndex].ourOffersFirstPara;
+            ourOffersSecondPara.textContent = contactJson[0].languages[languageIndex].ourOffersSecondPara;
+            ourOffersThirdPara.textContent = contactJson[0].languages[languageIndex].ourOffersThirdPara;
+
+        } catch (error) {
+            console.log("script ignoré, car par sur la page d'index");
+        }
     }
 
     function displayPageImages() {
