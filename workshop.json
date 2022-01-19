@@ -3,14 +3,10 @@
         "languages": [
             {
                 "language": "French",
-
                 "nameFieldContent": "Nom Prénom* :",
                 "mailFieldContent": "Adresse Email* :",
                 "messageFieldContent": "Entrez votre message* :",
                 "buttonFieldContent": "Contactez-nous !",
-
-                
-
                 "aboutFieldContent": "À propos",
                 "portfolioFieldContent": "Notre portfolio",
                 "offersFieldContent": "Nos offres",
@@ -20,14 +16,10 @@
             },
             {
                 "language": "English",
-
                 "nameFieldContent": "Last name, First name* :",
                 "mailFieldContent": "Email Address* :",
                 "messageFieldContent": "Enter your message* :",
                 "buttonFieldContent": "Contact us !",
-
-
-
                 "aboutFieldContent": "About us",
                 "portfolioFieldContent": "Our portfolio",
                 "offersFieldContent": "Our offers",

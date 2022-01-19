@@ -11,6 +11,7 @@ let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
 let aboutFieldNav = document.querySelectorAll('.about-us-navbar');
+console.log(aboutFieldNav);
 
 let logoNavImage = document.querySelectorAll('.logo-nav-image');
 let logoImage = document.querySelectorAll('.logo-image');
@@ -47,7 +48,8 @@ request.onload = function () {
             console.log('script ignoré, car pas sur la page de contact');
         }
 
-        aboutFieldNav.textContent = contactJson[0].languages[languageIndex].aboutFieldContent;
+        aboutFieldNav[0].textContent = contactJson[0].languages[languageIndex].aboutFieldContent;
+        console.log(contactJson[0].languages[languageIndex]);
     }
 
     function displayPageImages() {
