@@ -11,7 +11,11 @@ let messageField = document.querySelector('.message-field');
 let contactButton = document.getElementById('contact-button');
 
 let aboutFieldNav = document.querySelectorAll('.about-us-navbar');
-console.log(aboutFieldNav);
+let portfolioFieldNav = document.querySelectorAll('.portfolio-navbar');
+let offersFieldNav = document.querySelectorAll('.offers-navbar');
+let blogFieldNav = document.querySelectorAll('.blog-navbar');
+let contactFieldNav = document.querySelectorAll('.contact-navbar');
+let CGUFieldNav = document.querySelectorAll('.cgu-navbar');
 
 let logoNavImage = document.querySelectorAll('.logo-nav-image');
 let logoImage = document.querySelectorAll('.logo-image');
@@ -26,9 +30,6 @@ request.onload = function () {
     console.log(contactJson);
     displayPageText();
     displayPageImages();
-
-    console.log(contactJson[1].images[0].logoWithoutText);
-    console.log(logoNavImage[0]);
 
     function displayPageText() {
         let languageIndex;
@@ -49,7 +50,11 @@ request.onload = function () {
         }
 
         aboutFieldNav[0].textContent = contactJson[0].languages[languageIndex].aboutFieldContent;
-        console.log(contactJson[0].languages[languageIndex]);
+        portfolioFieldNav[0].textContent = contactJson[0].languages[languageIndex].portfolioFieldContent;
+        offersFieldNav[0].textContent = contactJson[0].languages[languageIndex].offersFieldContent;
+        blogFieldNav[0].textContent = contactJson[0].languages[languageIndex].blogFieldContent;
+        contactFieldNav[0].textContent = contactJson[0].languages[languageIndex].contactFieldContent;
+        CGUFieldNav[0].textContent = contactJson[0].languages[languageIndex].CGUFieldContent;
     }
 
     function displayPageImages() {
