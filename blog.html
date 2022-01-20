@@ -13,7 +13,7 @@
     
     <link rel="stylesheet" href="blog.css">
     
-    <link rel="stylesheet" href="blog.js">
+    <link rel="stylesheet" href="blog.json">
     
     <link rel="stylesheet" href="">
 
@@ -21,7 +21,7 @@
     
     <script src="https://kit.fontawesome.com/187e77825d.js" crossorigin="anonymous"></script>
 
-
+    <script src="https://kit.fontawesome.com/fb10055f97.js" crossorigin="anonymous"></script>
 
 
 
@@ -30,14 +30,58 @@
 </head>
 
 <body>
-    <c class="fa-solid fa-bars"></i>
+
+
+
+    <section class="bar-de-nav-section">
+
+        <nav class="bar-de-nav">
+
+            <a href="index.html#desktop"><img class="logo-nav-image" src="resources/images/logo.png"></a>
+            <i class="cross-nav fas fa-times index-cross"></i>
+            
+            <ul class="liste-nav">
+
+                <li class="index-liste-nav" ><a class="about-us-navbar" href="#about-us"></a> </li>
+                <li class="index-liste-nav"><a class="portfolio-navbar" href="#portfolio"></a></li>
+                <li class="index-liste-nav"><a class="offers-navbar" href="#title-nos"></a></li>
+                <li class="index-liste-nav"><a class="blog-navbar" href="blog.html"></a></li>
+                <li class="index-liste-nav"><a class="contact-navbar" href="contact.html"></a></li>
+                <li class="index-liste-nav"><a class="cgu-navbar" href=""></a></li>
+                <div class="flex">
+                    <img class="lang-icon icon-fr" src="resources/icons/france.png">
+                    <img class="lang-icon icon-en" src="resources/icons/united-kingdom.png">
+                </div>
+                
+
+            </ul>
+        </nav>
+        <section class="desktop_screen" id="desktop">
+        
+            <div class = "header">
+    
+                <img class ="desktop-logo logo-image" src="resources/images/logo_text.png" alt="Logo de Digital consultation">
+                <i class = "desktop-nav fas fa-bars index-hamburger"></i>
+               
+            </div>
+    
+        </section>
+
+    </section>
+
+    
+
+
+
+
+    
     
     <!--Blog-Section----------------------------->
     <section id="blog">
 
         <!--Blog-Heading------------------------->
         <div class="blog-heading">
-            <span>My Rencent Post</span>  
+             
             <h3>My Blog</h3>
         </div>
 
@@ -57,7 +101,7 @@
                         <span>13 janvier 2022 / web design</span>
                         <a href="#" class="blog-title">What Has Happened of all of the web Design</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?</p>
-                        <a href="#">Read More</a>
+                        <a href="article.html">Read More</a>
                     </div>
 
             </div>
@@ -131,7 +175,12 @@
             document.getElementById("image1").innerHTML = img.url + ", " ;
             </script>
             
-            
+            <!-------blog--content-1-->
+
+            <h4 class="art1">Titre de l article 1</h4>
+
+
+
             
             <!---------footer ----------------->
             <footer class="footer">
@@ -181,7 +230,10 @@
             </footer>
     
     </section>
+    <script type="text/json" src="workshop.json"></script>
+    <script type="text/javascript" src="script.js"></script>
 </body>
+
 
 
 </html>
