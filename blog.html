@@ -33,6 +33,7 @@
 
 
 
+
     <section class="bar-de-nav-section">
 
         <nav class="bar-de-nav">
@@ -72,9 +73,6 @@
     
 
 
-
-
-    
     
     <!--Blog-Section----------------------------->
     <section id="blog">
@@ -93,7 +91,7 @@
 
                     <!--Image-------->
                     <div class="blog-img">
-                        <img src="/resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
+                        <img src="resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
                     </div>
 
                     <!---TEXT------->
@@ -111,7 +109,7 @@
 
                     <!--Image-------->
                     <div class="blog-img">
-                        <img src="/resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
+                        <img src="resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
                     </div>
                     
                     <!---TEXT------->
@@ -124,20 +122,20 @@
 
             </div>
         
-                <!--Box-3---------->
+                <!--Box-test-json--------->
                 <div class="blog-box">
 
                     <!--Image-------->
                     <div class="blog-img">
-                        <img src="/resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
+                        <img src="resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
                     </div>
                     
                     <!---TEXT------->
                     <div class="blog-text">
-                        <span>13 janvier 2022 / web design</span>
-                        <a href="#" class="blog-title">What Has Happened of all of the web Design</a>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?</p>
-                        <a href="#">Read More</a>
+                        <span class="blogDate1">13 janvier 2022 / web design</span>
+                        <a href="#" class="blog-title1">What Has Happened of all of the web Design</a>
+                        <p class="Para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?</p>
+                        <a href="article.html">Read More</a>
                     </div>
 
             </div>
@@ -146,38 +144,43 @@
 
                     <!--Image-------->
                     <div class="blog-img">
-                        <img src="/resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
+                        <img src="resources/images/tezos-3-88RFifBno-unsplash.jpg" alt="blog">
                     </div>
                     
                     <!---TEXT------->
                     <div class="blog-text">
-                        <span>13 janvier 2022 / web design</span>
+                        <span class="date">13 janvier 2022 / web design</span>
                         <a href="#" class="blog-title">What Has Happened of all of the web Design</a>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?</p>
+
                         <a href="#">Read More</a>
                     </div>
 
             </div>
-      
+                <!--box-5--test--json------
+                
+                <div class="blog-box-json"></div>
+                    <p id="blog1"></p>
 
-            <p id="demo"></p>
+                    <script>
+                        document.getElementById("image-blog-1").innerHTML = Object.image;
+                    </script>
+        
+                <p id="article1"></p>
 
-            <script>
-            const txt = '{"name":"John", "age":30, "city":"New York"}'
-            const obj = JSON.parse(txt);
-            document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
-            </script>   
+        <script>
+        const xmlhttp = new XMLHttpRequest();
+        xmlhttp.onload = function() {
+        const myObj = JSON.parse(this.responseText);
+        document.getElementById("article1").innerHTML = myObj.name;
+        }
+        xmlhttp.open("GET", "blog.json");
+        xmlhttp.send();
+        </script>
+                    --->
             
-            <p id="image1"> </p>
-            <script>
-            const image1 = '{"src":"/resources/images/tezos-3-88RFifBno-unsplash.jpg"}'
-            const img = JSON.parse(image1);
-            document.getElementById("image1").innerHTML = img.url + ", " ;
-            </script>
-            
-            <!-------blog--content-1-->
 
-            <h4 class="art1">Titre de l article 1</h4>
+            
 
 
 
@@ -210,7 +213,7 @@
                         <div class="footer-col">
                             <h4>Nos services</h4>
                             <ul>
-                                <li><a href="#"></a></li>
+                                <li><a href="mention1.html"></a>Condition Générale D'utilisation</li>
                                 <li><a href="#"></a></li>
                                 <li><a href="#"></a></li>
                                 <li><a href="#"></a></li>
@@ -229,6 +232,24 @@
     
             </footer>
     
+
+        <!--test
+            <script>
+        const txt = '{"name":"John", "age":30, "city":"New York"}'
+        const obj = JSON.parse(txt);
+        document.getElementById("demo").innerHTML = obj.name + ", " + obj.age;
+        </script>   
+        
+        <p id="image1"> </p>
+        <script>
+        const image1 = '{"src":"/resources/images/tezos-3-88RFifBno-unsplash.jpg"}'
+        const img = JSON.parse(image1);
+        document.getElementById("image1").innerHTML = img.url + ", " ;
+        </script>
+         -->
+       
+
+
     </section>
     <script type="text/json" src="workshop.json"></script>
     <script type="text/javascript" src="script.js"></script>

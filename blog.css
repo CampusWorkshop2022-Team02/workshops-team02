@@ -295,7 +295,7 @@ a:hover{
 
 .article-img img{
     width: 100% ;
-    height: ;
+    height: 10%;
     object-fit: cover;
     object-position: center;
 }
@@ -314,6 +314,20 @@ a:hover{
 }
 .article-text-box strong{
     color: #9b9b9b;
+}
+span{
+    padding: 10px;
+    font-size: 1rem;
+    font-weight: 300;
+    text-size-adjust: 1.5rem;
+}
+strong{
+    font-size: 1.25rem;
+    font-weight: 800;
+}
+.cgu{
+    padding: 7%;
+    font-weight: 800;
 }
 
 /*-----media-query----------*/
@@ -339,6 +353,7 @@ a:hover{
         padding: 20px;
     }
 }
+
 
 
 

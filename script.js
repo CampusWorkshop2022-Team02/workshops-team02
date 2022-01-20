@@ -19,6 +19,15 @@ let blogFieldNav = document.querySelectorAll('.blog-navbar');
 let contactFieldNav = document.querySelectorAll('.contact-navbar');
 let CGUFieldNav = document.querySelectorAll('.cgu-navbar');
 
+// desktop selectors
+let firstCircle = document.querySelector('.desktop-circle');
+let secondCircle = document.querySelector('.desktop-circle2');
+let thirdCircle = document.querySelector('.desktop-circle3');
+let firstImageScreen = document.querySelector('.image-screen');
+let secondImageScreen = document.querySelector('.image-screen2');
+let thirdImageScreen = document.querySelector('.image-screen3');
+
+
 // about selectors
 let aboutUsTitle = document.querySelector('.about-us-title');
 let aboutUsFirstPara = document.querySelector('.text1-about-us');
@@ -154,6 +163,35 @@ function toggleNavBar() {
     }
 }
 
+firstCircle.addEventListener('click', FirstDesktopImage);
+secondCircle.addEventListener('click', SecondDesktopImage);
+thirdCircle.addEventListener('click', ThirdDesktopImage);
+
+function FirstDesktopImage() {
+    if (firstImageScreen.style.display = 'none') {
+        firstImageScreen.style.display = 'block';
+        secondImageScreen.style.display = 'none';
+        thirdImageScreen.style.display = 'none';
+    }
+}
+
+function SecondDesktopImage() {
+    if (secondImageScreen.style.display = 'none') {
+        secondImageScreen.style.display = 'block';
+        thirdImageScreen.style.display = 'none';
+        firstImageScreen.style.display = 'none';
+    }
+}
+
+function ThirdDesktopImage() {
+    if (thirdImageScreen.style.display = 'none') {
+        thirdImageScreen.style.display = 'block';
+        firstImageScreen.style.display = 'none';
+        secondImageScreen.style.display = 'none';
+    }
+}
+
+
 
 // offers text
 nextButton.addEventListener('click', changeOffersText);
@@ -174,6 +212,10 @@ function changeOffersText() {
     }
 }
 
+
+
+
+// language code (doesn't work)
 function changeLanguage(selectedLanguage) {
     console.log('egg');
     if (selectedLanguage === "fr") {
@@ -184,6 +226,8 @@ function changeLanguage(selectedLanguage) {
         console.log('en');
     }
 }
+
+
 
 // image landing screen
 
