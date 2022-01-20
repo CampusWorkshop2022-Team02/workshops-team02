@@ -22,6 +22,11 @@ a:hover{
     color: rgb(255, 249, 249);
 }
 
+.flex {
+    display: flex;
+    justify-content: space-around;
+}
+
 /* contact page style */
 
 .contact-logo {
@@ -99,6 +104,7 @@ a:hover{
 #contact-button:hover {
     background-color: var(--light-blue-green);
     color: white;
+    cursor: pointer;
 }
 
 .index-hamburger {
@@ -955,6 +961,7 @@ body, html{
     cursor: pointer;
 }
 
+
 @media(max-width: 1440px){
     .portfolio-title{
         margin-top: 10rem;
@@ -992,5 +999,12 @@ body, html{
     .suivant-button:hover{
         top: 377%;
     }
+}
 
+.lang-icon {
+    width: 15%;
+}
+
+.lang-icon:hover {
+    cursor: pointer;
 }

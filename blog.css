@@ -120,7 +120,7 @@ body {
 
 .blog-text a:hover{
     color: red;
-    transition: all ease 0.3ms
+    transition: all ease 0.3ms;
 }
 
 
@@ -148,7 +148,7 @@ body {
     }
 }
 
-+
+
 
 
 
