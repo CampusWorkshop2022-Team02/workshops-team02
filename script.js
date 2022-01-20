@@ -28,7 +28,7 @@ let ourPartners = document.querySelector('.partenaire-title');
 // portfolio selectors
 let portfolioTitle = document.querySelector('.portfolio-title');
 
-// offers selectors
+// offers selectors (text)
 let ourOffers = document.querySelector('.title-nos-offres');
 let ourOffersFirstPara = document.querySelector('.text-identity');
 let ourOffersSecondPara = document.querySelector('.text-ear');
@@ -36,6 +36,12 @@ let ourOffersThirdPara = document.querySelector('.text-hand');
 let textConseil = document.querySelector('.text-conseil');
 let textLaptop = document.querySelector('.text-laptop');
 let textDollar = document.querySelector('.text-dollar');
+let nextButton = document.querySelector('.suivant-button');
+// offers selectors (divs)
+let auditDiv = document.querySelector('.div-phase-audit');
+let adviceDiv = document.querySelector('.div-phase-conseil');
+let conceptionDiv = document.querySelector('.div-phase-conseption');
+
 
 //language selectors
 let iconFr = document.querySelectorAll('.icon-fr');
@@ -100,6 +106,7 @@ request.onload = function () {
             textConseil.textContent = contactJson[0].languages[languageIndex].textConseil;
             textLaptop.textContent = contactJson[0].languages[languageIndex].textLaptop;
             textDollar.textContent = contactJson[0].languages[languageIndex].textDollar;
+            nextButton.textContent = contactJson[0].languages[languageIndex].nextButton;
 
         } catch (error) {
             console.log("script ignoré, car par sur la page d'index");
@@ -147,6 +154,26 @@ function toggleNavBar() {
     }
 }
 
+
+// offers text
+nextButton.addEventListener('click', changeOffersText);
+
+function changeOffersText() {
+    if (auditDiv.style.display !== 'none') {
+        auditDiv.style.display = 'none';
+        conceptionDiv.style.display = 'none';
+        adviceDiv.style.display = 'block';
+    } else if (adviceDiv.style.display !== 'none') {
+        adviceDiv.style.display = 'none';
+        auditDiv.style.display = 'none';
+        conceptionDiv.style.display = 'block';
+    } else {
+        adviceDiv.style.display = 'none';
+        conceptionDiv.style.display = 'none';
+        auditDiv.style.display = 'block';
+    }
+}
+
 function changeLanguage(selectedLanguage) {
     console.log('egg');
     if (selectedLanguage === "fr") {
@@ -161,50 +188,50 @@ function changeLanguage(selectedLanguage) {
 // image landing screen
 
 
-let imageScreen = document.querySelector('.image-screen');
-let imageScreen2 = document.querySelector('.image-screen2');
-let imageScreen3 = document.querySelector('.image-screen3');
+// let imageScreen = document.querySelector('.image-screen');
+// let imageScreen2 = document.querySelector('.image-screen2');
+// let imageScreen3 = document.querySelector('.image-screen3');
 
-let desktopCircle = document.querySelector('.desktop-circle');
-let desktopCircle2 = document.querySelector('.desktop-circle2');
-let desktopCircle3 = document.querySelector('.desktop-circle3');
+// let desktopCircle = document.querySelector('.desktop-circle');
+// let desktopCircle2 = document.querySelector('.desktop-circle2');
+// let desktopCircle3 = document.querySelector('.desktop-circle3');
 
-try {
-    desktopCircle.addEventListener('click', changeToImage1);
-    desktopCircle2.addEventListener('click', changeToImage2);
-    desktopCircle3.addEventListener('click', changeToImage3);
-} catch (error) {
-    console.log("script ignoré, car par sur la page d'index");
-}
+// try {
+//     desktopCircle.addEventListener('click', changeToImage1);
+//     desktopCircle2.addEventListener('click', changeToImage2);
+//     desktopCircle3.addEventListener('click', changeToImage3);
+// } catch (error) {
+//     console.log("script ignoré, car par sur la page d'index");
+// }
 
-function changeToImage1 () {
-    if (imageScreen.style.display === 'none') {
-        imageScreen2.style.display = 'none';
-        imageScreen3.style.display ='none';
-        imageScreen.style.display = 'block';
-    }
+// function changeToImage1 () {
+//     if (imageScreen.style.display === 'none') {
+//         imageScreen2.style.display = 'none';
+//         imageScreen3.style.display ='none';
+//         imageScreen.style.display = 'block';
+//     }
         
-}
+// }
 
-function changeToImage2 () {
-    if (imageScreen2.style.display === 'none') {
+// function changeToImage2 () {
+//     if (imageScreen2.style.display === 'none') {
        
-        imageScreen3.style.display ='none';
-        imageScreen.style.display = 'none';
-        imageScreen2.style.display = 'block';
-    }
+//         imageScreen3.style.display ='none';
+//         imageScreen.style.display = 'none';
+//         imageScreen2.style.display = 'block';
+//     }
         
-}
+// }
 
-function changeToImage3 () {
-    if (imageScreen3.style.display === 'none') {
-        imageScreen2.style.display = 'none';
-        imageScreen.style.display = 'none';
-        imageScreen3.style.display ='block';
+// function changeToImage3 () {
+//     if (imageScreen3.style.display === 'none') {
+//         imageScreen2.style.display = 'none';
+//         imageScreen.style.display = 'none';
+//         imageScreen3.style.display ='block';
         
-    }
+//     }
         
-}
+// }
 
 
 
