@@ -41,8 +41,8 @@ let textDollar = document.querySelector('.text-dollar');
 let iconFr = document.querySelectorAll('.icon-fr');
 let iconEn = document.querySelectorAll('.icon-en');
 
-iconFr[0].addEventListener('click', changeLanguage.bind("fr"));
-iconEn[0].addEventListener('click', changeLanguage.bind("en"));
+// iconFr[0].addEventListener('click', changeLanguage.bind("fr"));
+// iconEn[0].addEventListener('click', changeLanguage.bind("en"));
 
 
 let logoNavImage = document.querySelectorAll('.logo-nav-image');
@@ -169,9 +169,13 @@ let desktopCircle = document.querySelector('.desktop-circle');
 let desktopCircle2 = document.querySelector('.desktop-circle2');
 let desktopCircle3 = document.querySelector('.desktop-circle3');
 
-desktopCircle.addEventListener('click', changeToImage1);
-desktopCircle2.addEventListener('click', changeToImage2);
-desktopCircle3.addEventListener('click', changeToImage3);
+try {
+    desktopCircle.addEventListener('click', changeToImage1);
+    desktopCircle2.addEventListener('click', changeToImage2);
+    desktopCircle3.addEventListener('click', changeToImage3);
+} catch (error) {
+    console.log("script ignoré, car par sur la page d'index");
+}
 
 function changeToImage1 () {
     if (imageScreen.style.display === 'none') {
