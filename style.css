@@ -456,7 +456,7 @@ body, html{
 .partenaire-title{
     color: var(--dark-green);
     position: absolute;
-    padding-top: 75%;
+    padding-top: 80%;
     left: 35%;
     text-align: center;
     
@@ -470,7 +470,7 @@ body, html{
     padding-top: 85%;
     padding-left: 23%;
     align-content:space-between;
-    width: 100%;
+    width: auto;
    
    
 
@@ -481,6 +481,7 @@ body, html{
     
     width: 13%;
     align-content:space-between;
+    border-radius: 34px;
     
 
 }
@@ -790,8 +791,8 @@ body, html{
    padding: 0%;
    position: absolute;
    width: auto;
-   height: 100%;
-   margin-top: 9rem;
+   
+   margin-top: 23rem;
    font-size: 110%;
    left: 28%;
 
@@ -857,7 +858,7 @@ body, html{
     padding: 0%;
    position: absolute;
    width: 100%;
-   height: 100%;
+   
    top: 460%;
    font-size: 110%;
 }
@@ -887,7 +888,7 @@ body, html{
    padding: 0%;
    position: absolute;
    width: 100%;
-   height: 100%;
+  
    top: 460%;
    font-size: 110%;
 
@@ -964,12 +965,12 @@ body, html{
 
 @media(max-width: 1440px){
     .portfolio-title{
-        margin-top: 10rem;
+        margin-top: 5rem;
     }
     .div-phase-audit{
         width: 35%;
         left: 29rem;
-        top: 313%;
+        top: 320%;
         font-size: 0.7rem;
 
     }
@@ -990,21 +991,120 @@ body, html{
 
     }
 
+    
+
+    .titre-portfolio-face1{
+        opacity: 1;
+        top: 260%;
+        left: 10%;
+    }
+    .text-portfolio-face1{
+        opacity: 1;
+        top: 280%;
+        left: 10%;
+    }
+    
+    .titre-portfolio1{
+        opacity: 1;
+        top: 250%;
+        left: 40%;
+    }
+    .text-portfolio1{
+        opacity: 1;
+        top: 260%;
+        left: 40%;
+    }
+    .titre-portfolio2{
+        opacity: 1;
+        top: 290%;
+        left: 40%;
+    }
+    .text-portfolio2{
+        opacity: 1;
+        top: 300%;
+        left: 40%;
+    }
+    .titre-portfolio-face2{
+        opacity: 1;
+        top: 260%;
+        left: 79%;
+    }
+    .text-portfolio-face2{
+        opacity: 1;
+        top: 280%;
+        left: 79%;
+    }
+
+
+    
+
+
+    
     .suivant-button{
-        top: 377%;
+        top: 383%;
 
     }
-
-
     .suivant-button:hover{
-        top: 377%;
+        top: 383%;
     }
+
 }
 
-.lang-icon {
-    width: 15%;
-}
+@media(max-width: 1740px){
 
-.lang-icon:hover {
-    cursor: pointer;
+    .titre-portfolio-face1{
+        opacity: 1;
+        top: 290%;
+        left: 10%;
+    }
+    .text-portfolio-face1{
+        opacity: 1;
+        top: 310%;
+        left: 10%;
+    }
+    
+    .titre-portfolio1{
+        opacity: 1;
+        top: 280%;
+        left: 40%;
+    }
+    .text-portfolio1{
+        opacity: 1;
+        top: 290%;
+        left: 40%;
+    }
+    .titre-portfolio2{
+        opacity: 1;
+        top: 330%;
+        left: 40%;
+    }
+    .text-portfolio2{
+        opacity: 1;
+        top: 340%;
+        left: 40%;
+    }
+    .titre-portfolio-face2{
+        opacity: 1;
+        top: 290%;
+        left: 79%;
+    }
+    .text-portfolio-face2{
+        opacity: 1;
+        top: 310%;
+        left: 79%;
+    }
+
+    .suivant-button{
+        top: 441%;
+
+    }
+    .suivant-button:hover{
+        top: 441%;
+    }
+
+
 }
+    
+
+    
+
