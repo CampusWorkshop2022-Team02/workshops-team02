@@ -122,7 +122,7 @@ body, html{
 
 
  
-.image_screen{
+.image-screen{
 
     
     width: 100%;
@@ -144,7 +144,7 @@ body, html{
    
 }
 
-.image_screen2{
+.image-screen2{
     display: none;
     width: 100%;
     height: 70rem;
@@ -165,7 +165,7 @@ body, html{
     
 }
 
-.image_screen3{
+.image-screen3{
     display: none;
     width: 100%;
     height: 70rem;
@@ -324,6 +324,11 @@ body, html{
    
     
 }
+
+.lang-icon {
+    width: 15%;
+}
+
 .cross-nav{
     font-size: 4rem;
     color: var(--dark-green);
@@ -881,7 +886,6 @@ body, html{
     width: 50%;
     left: 25%;
     
-    
 }
 
 
@@ -941,27 +945,28 @@ body, html{
 }
 
 .suivant-button{
-    position: absolute;
+    position:absolute;
     z-index: 6;
     width: 5rem;
     background-color: var(--dark-green);
     border-radius: 40px;
     text-align: center;
-    top: 530%;
+    top:530%;
     left: 70%;
 }
 
 .suivant-button:hover{
-    position: absolute;
+    position:absolute;
     z-index: 6;
     width: 5rem;
     background-color: var(--dark-green);
     border-radius: 40px;
     text-align: center;
-    color: white;
-    top: 530%;
+    top:530%;
     left: 70%;
+    color: white;
     cursor: pointer;
+   
 }
 
 
