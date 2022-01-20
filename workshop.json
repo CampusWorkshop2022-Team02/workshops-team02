@@ -22,7 +22,8 @@
                 "ourOffersThirdPara": "Vous orienter vers la solution dont vous avez besoin",
                 "textConseil": "À la suite de la phase d'audit seront identifiées les priorités en matière de conseil et de conception. À cette étape un premier bilan est effectué dans lequel nous présentons les résultats de l'audit et émettons des conseils pour la phase de conception",
                 "textLaptop": "Assurez votre présence en ligne en publiant le contenu essentiel de votre activité sur un site internet entièrement personnalisé.",
-                "textDollar": "Optez pour une solution de site e-commerce vous permet de vendre 24 heures sur 24 et 7 jours sur 7."
+                "textDollar": "Optez pour une solution de site e-commerce vous permet de vendre 24 heures sur 24 et 7 jours sur 7.",
+                "nextButton": "Suivant"
             },
             {
                 "language": "English",
@@ -45,7 +46,8 @@
                 "ourOffersThirdPara": "Helping you to find the solution you need",
                 "textConseil": "After the audit phase will be identified the advice and conception priorities. A first statement is done, within it we will expose the audit results and will think about advices for the conception",
                 "textLaptop": "Confirm your online presence by publishing your activity's essential content on a customizable website.",
-                "textDollar": "Opting for an e-market website solution allows you to sell 24/7."
+                "textDollar": "Opting for an e-market website solution allows you to sell 24/7.",
+                "nextButton": "Next"
             }
         ]
     },
