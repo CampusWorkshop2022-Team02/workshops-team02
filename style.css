@@ -859,7 +859,8 @@ body, html{
    position: absolute;
    width: 100%;
    
-   top: 460%;
+   
+   top: 480%;
    font-size: 110%;
 }
 .i-conseil{
@@ -869,6 +870,7 @@ body, html{
     left: 49%;
     font-size: 500%;
     color: red;
+   
 }
 .text-conseil{
     position: relative;
@@ -889,7 +891,7 @@ body, html{
    position: absolute;
    width: 100%;
   
-   top: 460%;
+   top: 480%;
    font-size: 110%;
 
 
@@ -977,7 +979,7 @@ body, html{
     .div-phase-conseil{
         width: 35%;
         left: 29rem;
-        top: 325%;
+        top: 353%;
         font-size: 0.7rem;
 
     }
@@ -986,7 +988,7 @@ body, html{
         
         width: 75%;
         left: 11rem;
-        top: 325%;
+        top: 353%;
         font-size: 0.7rem;
 
     }
@@ -1035,18 +1037,13 @@ body, html{
         left: 79%;
     }
 
-
-    
-
-
     
     .suivant-button{
-        top: 383%;
+
+        margin-top: 0%;
 
     }
-    .suivant-button:hover{
-        top: 383%;
-    }
+   
 
 }
 
