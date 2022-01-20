@@ -69,7 +69,12 @@ ce design pour créer une page originale mais qui reste propre.
 
 
 
-Blog:
+    Blog:
+
+    La page de blog est pourvu du bar de naviguation, un titre indiquant le contenu"blog",
+    la page de presentation des articles de blog et tres simple avec les blocs "article" indiquant la date de publication ,ainsi que le créateur de l'article .
+    Dans le bloc "blog" l'utilisateur peut lire la description de l'article puis cliquez sur le bouton "read more" pour accéder a la page de l'article ou il pourraconsulter tout le contenu.
+    Malheuresement pour le blog il n'a pas de fichier json fonctionnel car j'ai été dans l'incapaciter de comprendre ce language meme a l'aide que j'ai pu trouvé sur internet et celle fournit par mes collegue. 
 
 Contact:
 
