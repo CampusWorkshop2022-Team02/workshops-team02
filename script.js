@@ -158,49 +158,49 @@ function changeLanguage(selectedLanguage) {
     }
 }
 
-//image landing screen
+// image landing screen
 
 
-// let imageScreen = document.querySelector('.image-screen');
-// let imageScreen2 = document.querySelector('.image-screen2');
-// let imageScreen3 = document.querySelector('.image-screen3');
+let imageScreen = document.querySelector('.image-screen');
+let imageScreen2 = document.querySelector('.image-screen2');
+let imageScreen3 = document.querySelector('.image-screen3');
 
-// let desktopCircle = document.querySelector('.desktop-circle');
-// let desktopCircle2 = document.querySelector('.desktop-circle2');
-// let desktopCircle3 = document.querySelector('.desktop-circle3');
+let desktopCircle = document.querySelector('.desktop-circle');
+let desktopCircle2 = document.querySelector('.desktop-circle2');
+let desktopCircle3 = document.querySelector('.desktop-circle3');
 
-// desktopCircle.addEventListener('click', changeToImage1);
-// desktopCircle2.addEventListener('click', changeToImage2);
-// desktopCircle3.addEventListener('click', changeToImage3);
+desktopCircle.addEventListener('click', changeToImage1);
+desktopCircle2.addEventListener('click', changeToImage2);
+desktopCircle3.addEventListener('click', changeToImage3);
 
-// function changeToImage1 () {
-//     if (imageScreen.style.display === 'none') {
-//         imageScreen2.style.display = 'none';
-//         imageScreen3.style.display ='none';
-//         imageScreen.style.display = '';
-//     }
+function changeToImage1 () {
+    if (imageScreen.style.display === 'none') {
+        imageScreen2.style.display = 'none';
+        imageScreen3.style.display ='none';
+        imageScreen.style.display = 'block';
+    }
         
-// }
+}
 
-// function changeToImage2 () {
-//     if (imageScreen2.style.display === 'none') {
+function changeToImage2 () {
+    if (imageScreen2.style.display === 'none') {
        
-//         imageScreen3.style.display ='none';
-//         imageScreen.style.display = 'none';
-//         imageScreen2.style.display = '';
-//     }
+        imageScreen3.style.display ='none';
+        imageScreen.style.display = 'none';
+        imageScreen2.style.display = 'block';
+    }
         
-// }
+}
 
-// function changeToImage3 () {
-//     if (imageScreen3.style.display === 'none') {
-//         imageScreen2.style.display = 'none';
-//         imageScreen.style.display = 'none';
-//         imageScreen3.style.display ='';
+function changeToImage3 () {
+    if (imageScreen3.style.display === 'none') {
+        imageScreen2.style.display = 'none';
+        imageScreen.style.display = 'none';
+        imageScreen3.style.display ='block';
         
-//     }
+    }
         
-// }
+}
 
 
 

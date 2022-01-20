@@ -143,6 +143,7 @@ body, html{
     filter: gray; 
    
 }
+
 .image_screen2{
     display: none;
     width: 100%;
@@ -163,6 +164,7 @@ body, html{
     filter: gray; 
     
 }
+
 .image_screen3{
     display: none;
     width: 100%;
@@ -211,7 +213,7 @@ body, html{
 
 .desktop-nav{
 
-    position: fixed;
+    position: absolute;
     color: var(--dark-green);
     font-size: 3rem;
     left: 95%;
@@ -223,7 +225,7 @@ body, html{
 .desktop-nav:hover{
 
     color: var(--dark-blue);
-    position: fixed;
+    position: absolute;
     font-size: 3rem;
     left: 95%;
     top: 5%;
@@ -312,7 +314,7 @@ body, html{
     display: none;
     width: 14rem;
     height: 25rem;
-    position: fixed;
+    position: absolute;
     right: 1%;
     top: 4%;
     z-index: 8;
@@ -454,59 +456,51 @@ body, html{
 .partenaire-title{
     color: var(--dark-green);
     position: absolute;
-    top: 75%;
+    padding-top: 75%;
     left: 35%;
     text-align: center;
-}
-
-.nos-partenaire{
-    display: flex;
-    flex-direction: row;
-    margin: 0 auto;
-    padding-top: 10%;
-    padding-bottom: 10%;
-    padding-right: 10%;
-
-}
-
-.angle-partenaire1{
-    font-size: 3rem;
-    padding-top: 8%;
-    color: var(--dark-green);
     
 }
 
-
-.angle-partenaire1:hover{
-    font-size: 3rem;
-    padding-top: 8%;
-    color: var(--dark-blue);
-    cursor: pointer;
+.nos-partenaire{
+   
+    
+    position: absolute;
+ 
+    padding-top: 85%;
+    padding-left: 23%;
+    align-content:space-between;
+    width: 100%;
+   
+   
 
 }
+
 
 .image-partenaire{
-    text-align: center;
-    width: 14rem;
-    margin-left: 5%;
-    margin-right:5%;
-}
-
-.angle-partenaire2{
-    font-size: 3rem;
-    padding-top: 8%;
-    color: var(--dark-green);
+    
+    width: 13%;
+    align-content:space-between;
+    
 
 }
-
-.angle-partenaire2:hover{
-    font-size: 3rem;
-    padding-top: 8%;
-    color: var(--dark-blue);
-    cursor: pointer;
-
-
+.image-partenaire:hover{
+    
+    width: 13%;
+    align-content:space-between;
+     filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 10+, Firefox on Android */    
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    filter: grayscale(100%);
+    filter: gray; 
+    transition: filter 1s;
 }
+    
+
+
+
+
 
 /*Portfolio*/
 
@@ -603,6 +597,169 @@ body, html{
     transition: filter 1s;
 }
 
+.titre-portfolio-face1{position: absolute;
+    top: 200rem;
+    left: 11rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    opacity: 0;
+}
+.text-portfolio-face1{position: absolute;
+    top: 210rem;
+    left: 11rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    height: 50%;
+    opacity: 0;
+}
+
+.titre-portfolio1{position: absolute;
+
+    top: 190rem;
+    left: 47rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    opacity: 0;
+}
+.text-portfolio1{position: absolute;
+    top: 200rem;
+    left: 47rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    opacity: 0;
+}
+
+.titre-portfolio2{position: absolute;
+    top: 222rem;
+    left: 47rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    opacity: 0;
+
+}
+.text-portfolio2{position: absolute;
+    top: 233rem;
+    left: 47rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    height: 30%;
+    opacity: 0;
+}
+.titre-portfolio-face2{position: absolute;
+    top: 200rem;
+    left: 95rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    height: 50%;
+    opacity: 0;
+}
+.text-portfolio-face2{position: absolute;
+    top: 210rem;
+    left: 95rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    height: 50%;
+    opacity: 0;
+}
+
+.titre-portfolio-face1:hover{position: absolute;
+    top: 200rem;
+    left: 11rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    opacity: 1;
+}
+.text-portfolio-face1:hover{position: absolute;
+    top: 210rem;
+    left: 11rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    height: 50%;
+    opacity: 1;
+}
+
+.titre-portfolio1:hover{position: absolute;
+
+    top: 190rem;
+    left: 47rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    opacity: 1;
+}
+.text-portfolio1:hover{position: absolute;
+    top: 200rem;
+    left: 47rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    opacity: 1;
+}
+
+.titre-portfolio2:hover{position: absolute;
+    top: 222rem;
+    left: 47rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    opacity: 1;
+
+}
+.text-portfolio2:hover{position: absolute;
+    top: 233rem;
+    left: 47rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 20%;
+    height: 30%;
+    opacity: 1;
+}
+.titre-portfolio-face2:hover{position: absolute;
+    top: 200rem;
+    left: 95rem;
+    font-size: 3rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    height: 50%;
+    opacity: 1;
+}
+.text-portfolio-face2:hover{position: absolute;
+    top: 210rem;
+    left: 95rem;
+    font-size: 1rem;
+    text-align: center;
+    color: bisque;
+    width: 13%;
+    height: 50%;
+    opacity: 1;
+}
+
+
 
 
 
@@ -632,10 +789,11 @@ body, html{
    
    padding: 0%;
    position: absolute;
-   width: 100%;
+   width: auto;
    height: 100%;
-   top: 460%;
+   margin-top: 9rem;
    font-size: 110%;
+   left: 28%;
 
 }
 
@@ -695,7 +853,7 @@ body, html{
 
 
 .div-phase-conseil {
-    display: none;
+   display: none;
     padding: 0%;
    position: absolute;
    width: 100%;
@@ -725,7 +883,7 @@ body, html{
 
 
 .div-phase-conseption{
-    display: none;
+   display: none;
    padding: 0%;
    position: absolute;
    width: 100%;
@@ -801,6 +959,46 @@ body, html{
     top: 530%;
     left: 70%;
     cursor: pointer;
+}
+
+
+@media(max-width: 1440px){
+    .portfolio-title{
+        margin-top: 10rem;
+    }
+    .div-phase-audit{
+        width: 35%;
+        left: 29rem;
+        top: 313%;
+        font-size: 0.7rem;
+
+    }
+    .div-phase-conseil{
+        width: 35%;
+        left: 29rem;
+        top: 325%;
+        font-size: 0.7rem;
+
+    }
+
+    .div-phase-conseption{
+        
+        width: 75%;
+        left: 11rem;
+        top: 325%;
+        font-size: 0.7rem;
+
+    }
+
+    .suivant-button{
+        top: 377%;
+
+    }
+
+
+    .suivant-button:hover{
+        top: 377%;
+    }
 }
 
 .lang-icon {
