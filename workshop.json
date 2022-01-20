@@ -13,34 +13,27 @@
                 "blogFieldContent"      : "Notre blog",
                 "contactFieldContent"   : "Nous contacter",
                 "CGUFieldContent"       : "Conditions générales",
-               
                 "aboutUsTitle"          : "À propos de nous",
                 "aboutUsFirstPara"      : "Digital Consultant est la marque qui réunit les meilleurs indépendants et entreprises du Web pour livrer un service",
                 "aboutUsSecondPara"     : "Livrer un service personnalisé et de bout en bout qui s'adapte à la structure et au portefeuille de ses clients",
-              
                 "ourPartners"           : "Nos partenaires",
                 "ourOffersFirstPara"    : "Récolter un maximum d’informations sur votre entreprise",
                 "ourOffersSecondPara"   : "Identifier avec vous vos difficultés et vos facilités",
                 "ourOffersThirdPara"    : "Vous orienter vers la solution dont vous avez besoin",
-               
                 "textConseil"           : "À la suite de la phase d'audit seront identifiées les priorités en matière de conseil et de conception. À cette étape un premier bilan est effectué dans lequel nous présentons les résultats de l'audit et émettons des conseils pour la phase de conception",
                 "textLaptop"            : "Assurez votre présence en ligne en publiant le contenu essentiel de votre activité sur un site internet entièrement personnalisé.",
                 "textDollar"            : "Optez pour une solution de site e-commerce vous permet de vendre 24 heures sur 24 et 7 jours sur 7.",
-
                 "blogTitre1"            :"Creer un site web site responsive",
                 "blogDate1"             :"13 janvier 2022 ",
                 "blogDescri1"           :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?",
                 "blogImg1"              :"./resources/images/tezos-3-88RFifBno-unsplash.jpg",
-
                 "artTitle1"             :"Creer un site web site responsive",
                 "Para1"                 :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?",
                 "Para2"                 :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?",
-
                 "blogTitre2"            :"Creer un site web site ",
                 "blogDate2"             :"14 janvier 2022 ",
                 "blogDescri2"           :"Lorem elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?",
                 "blogImg2"              :"./resources/images/tezos-3-88RFifBno-unsplash.jpg",
-
                 "artTitle2"             :"Creer un site web site responsive",
                 "Para3"                 :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?",
                 "Para4"                 :"Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde praesentium voluptatum quia, debitis distinctio incidunt nemo, eveniet modi ipsa magnam tenetur, recusandae est obcaecati dignissimos inventore non ex itaque quasi?",
@@ -60,16 +53,13 @@
                 "blogFieldContent"      : "Our blog",
                 "contactFieldContent"   : "Contact us",
                 "CGUFieldContent"       : "General terms",
-              
                 "aboutUsTitle"          : "About our company",
                 "aboutUsFirstPara"      : "Digital Consultant as a team is putting together the best freelancers and Web companies to deliver a service",
                 "aboutUsSecondPara"     : "Deliver a personalized service from scratch, adapting the client's structure and wallet",
-              
                 "ourPartners"           : "Our partners",
                 "ourOffersFirstPara"    : "Gathering informations about your company",
                 "ourOffersSecondPara"   : "Identifying together your difficulties",
                 "ourOffersThirdPara"    : "Helping you to find the solution you need",
-               
                 "textConseil"           : "After the audit phase will be identified the advice and conception priorities. A first statement is done, within it we will expose the audit results and will think about advices for the conception",
                 "textLaptop"            : "Confirm your online presence by publishing your activity's essential content on a customizable website.",
                 "textDollar"            : "Opting for an e-market website solution allows you to sell 24/7."
