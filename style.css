@@ -864,7 +864,8 @@ body, html{
    position: absolute;
    width: 100%;
    
-   top: 460%;
+   
+   top: 480%;
    font-size: 110%;
 }
 .i-conseil{
@@ -874,6 +875,7 @@ body, html{
     left: 49%;
     font-size: 500%;
     color: red;
+   
 }
 .text-conseil{
     position: relative;
@@ -894,7 +896,7 @@ body, html{
    position: absolute;
    width: 100%;
   
-   top: 460%;
+   top: 480%;
    font-size: 110%;
 
 
@@ -982,7 +984,7 @@ body, html{
     .div-phase-conseil{
         width: 35%;
         left: 29rem;
-        top: 325%;
+        top: 353%;
         font-size: 0.7rem;
 
     }
@@ -991,7 +993,7 @@ body, html{
         
         width: 75%;
         left: 11rem;
-        top: 325%;
+        top: 353%;
         font-size: 0.7rem;
 
     }
@@ -1040,18 +1042,13 @@ body, html{
         left: 79%;
     }
 
-
-    
-
-
     
     .suivant-button{
-        top: 383%;
+
+        margin-top: 0%;
 
     }
-    .suivant-button:hover{
-        top: 383%;
-    }
+   
 
 }
 
@@ -1112,4 +1109,110 @@ body, html{
     
 
     
+/*--------------footer-----------*/
+.conterner{
+    max-width: 1170px;
+    background-color: #f33c3c;
+    margin:auto;
+}
+.row{
+   display: flex;
+   flex-wrap: wrap;
+}
+.ul{
+   list-style: none;
+}
+.footer{
+   background-color: #24262b;
+   padding: 70px 0px;
+}
+.footer-col{
+   width: 20%;
+   padding: 0% 20px;
+}
+.footer-col h4{
+   font-size: 18px;
+   color: #ffff;
+   text-transform: capitalize;
+   margin-bottom: 35px;
+   font-weight: 500;
+   position: relative;
+   
+}
+.footer-col h4::before{
+   content: '';
+   position: absolute;
+   left: 0;
+   bottom: -10px;
+   background-color: #e91e63;
+   height: 2px;
+   box-sizing: border-box;
+   width: 50px;
+}
+.footer-col ul li:not(:last-child){
+   margin-bottom: 10px;
+}
+.footer-col ul li a{
+   font-size: 16px;
+   text-transform: capitalize;
+   color:  #ffff;
+   text-decoration: none;
+   font-weight: 300;
+   color: #bbbbbb;
+   display: block;
+   transition: all 0.3s ease;
+}
+.footer-col ul li a:hover{
+   color: #ffff;
+   padding-left: 10%;
+}
+.footer-col .social-link a{
+   display: inline-block;
+   height: 40px;
+   width:  40px;
+   background-color: white;
+   margin: 0 10px 10px 0;
+   text-align: center;
+   line-height: 40px;
+   border-radius: 50%;
+   color: tomato;
+   transition: all 0.5s ease;
+}
 
+.footer-col .social-link a:hover{
+   color: #000;
+   background-color: thistle;
+
+
+}
+
+
+/*--------------media query footer----------------*/
+@media(max-width: 767px){
+   .footer-col {
+       width: 50%;
+       margin-bottom: 30px;
+   }
+   
+}
+@media(max-width: 574px){
+   .footer-col {
+       width: 50%;
+       margin-bottom: 30px;
+   }
+   
+}
+@media(max-width: 767px){
+   .footer-col {
+       width: 50%;
+       margin-bottom: 30px;
+   }
+   
+}
+@media(max-width: 767px){
+   .footer-col {
+       width: 100%;
+       margin-bottom: 30px;
+   }
+   
+}
