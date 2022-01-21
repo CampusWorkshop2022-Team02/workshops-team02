@@ -69,18 +69,18 @@ ce design pour créer une page originale mais qui reste propre.
 
 
 
-    Blog:
+Blog:
 
-    La page de blog est pourvu du bar de naviguation, un titre indiquant le contenu"blog",
-    la page de presentation des articles de blog et tres simple avec les blocs "article" indiquant la date de publication ,ainsi que le créateur de l'article .
-    Dans le bloc "blog" l'utilisateur peut lire la description de l'article puis cliquez sur le bouton "read more" pour accéder a la page de l'article ou il pourraconsulter tout le contenu.
-    Malheuresement pour le blog il n'a pas de fichier json fonctionnel car j'ai été dans l'incapaciter de comprendre ce language meme a l'aide que j'ai pu trouvé sur internet et celle fournit par mes collegue. 
+La page de blog est pourvu du bar de naviguation, un titre indiquant le contenu"blog",
+la page de presentation des articles de blog et tres simple avec les blocs "article" indiquant la date de publication ,ainsi que le créateur de l'article .
+Dans le bloc "blog" l'utilisateur peut lire la description de l'article puis cliquer sur le bouton "read more" pour accéder a la page de l'article ou il pourra consulter tout le contenu.
+Malheuresement pour le blog il n'y a pas de fichier json fonctionnel.
 
 Contact:
 
 Cette page est très simple. Elle est pourvue des trois éléments form, afin de rentrer ses informations et le message que l'on veut envoyer.
 Le bouton de contact ne permet cependant pas rééllement d'envoyer de message.
-La page n'a pas de media queries mais est cependant très responsive
+La page n'a pas de media queries mais est cependant très responsive.
 
 
 Problèmes rencontrés:

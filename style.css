@@ -704,64 +704,31 @@ body, html{
     opacity: 1;
 }
 
-.titre-portfolio1:hover{position: absolute;
+.titre-portfolio1:hover{
 
-    top: 190rem;
-    left: 47rem;
-    font-size: 3rem;
-    text-align: center;
-    color: bisque;
-    width: 20%;
+
     opacity: 1;
 }
-.text-portfolio1:hover{position: absolute;
-    top: 200rem;
-    left: 47rem;
-    font-size: 1rem;
-    text-align: center;
-    color: bisque;
-    width: 20%;
+.text-portfolio1:hover{
+  
     opacity: 1;
 }
 
-.titre-portfolio2:hover{position: absolute;
-    top: 222rem;
-    left: 47rem;
-    font-size: 3rem;
-    text-align: center;
-    color: bisque;
-    width: 20%;
+.titre-portfolio2:hover{
+ 
     opacity: 1;
 
 }
-.text-portfolio2:hover{position: absolute;
-    top: 233rem;
-    left: 47rem;
-    font-size: 1rem;
-    text-align: center;
-    color: bisque;
-    width: 20%;
-    height: 30%;
+.text-portfolio2:hover{
+ 
     opacity: 1;
 }
-.titre-portfolio-face2:hover{position: absolute;
-    top: 200rem;
-    left: 95rem;
-    font-size: 3rem;
-    text-align: center;
-    color: bisque;
-    width: 13%;
-    height: 50%;
+.titre-portfolio-face2:hover{
+  
     opacity: 1;
 }
-.text-portfolio-face2:hover{position: absolute;
-    top: 210rem;
-    left: 95rem;
-    font-size: 1rem;
-    text-align: center;
-    color: bisque;
-    width: 13%;
-    height: 50%;
+.text-portfolio-face2:hover{
+  
     opacity: 1;
 }
 
@@ -1002,50 +969,57 @@ body, html{
 
     .titre-portfolio-face1{
         opacity: 1;
-        top: 260%;
+        margin-top:-20%;
         left: 10%;
     }
     .text-portfolio-face1{
         opacity: 1;
         top: 280%;
         left: 10%;
+        margin-top:-20%;
     }
     
     .titre-portfolio1{
         opacity: 1;
         top: 250%;
         left: 40%;
+        margin-top:-20%;
     }
     .text-portfolio1{
         opacity: 1;
         top: 260%;
         left: 40%;
+        margin-top:-20%;
     }
     .titre-portfolio2{
         opacity: 1;
         top: 290%;
         left: 40%;
+        margin-top:-20%;
     }
     .text-portfolio2{
         opacity: 1;
         top: 300%;
         left: 40%;
+        margin-top:-20%;
     }
     .titre-portfolio-face2{
         opacity: 1;
         top: 260%;
         left: 79%;
+        margin-top:-20%;
     }
     .text-portfolio-face2{
         opacity: 1;
         top: 280%;
         left: 79%;
+        margin-top:-20%;
     }
 
     
     .suivant-button{
 
-        margin-top: 0%;
+        margin-top: -39%;
 
     }
    
