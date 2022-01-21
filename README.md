@@ -29,7 +29,7 @@ Pour faire ceci, nous avons d'abord procédé de la manière suivante:
 Notre Vision:
 
 Nous avons d'abord réfléchi à l'image que nous voulions donner à l'entreprise via ce site web. Nous 
-nous sommes donc orientés vers un design sans trop d'artifice, soigné et épuré. Pour ce faire, nous nous 
+nous sommes donc orientés vers un design sans trop d'artifices, soigné et épuré. Pour ce faire, nous nous 
 sommes dits que la meilleure manière de procéder était de créer le moins de pages possible, ce qui permettrait
 de présenter l'entreprise juste en descendant sur la page et non pas en cliquant sur des liens, cela permet 
 de créer un site plus facile à lire et plus moderne.
@@ -71,9 +71,9 @@ ce design pour créer une page originale mais qui reste propre.
 
 Blog:
 
-La page de blog est pourvu du bar de naviguation, un titre indiquant le contenu"blog",
-la page de presentation des articles de blog et tres simple avec les blocs "article" indiquant la date de publication ,ainsi que le créateur de l'article .
-Dans le bloc "blog" l'utilisateur peut lire la description de l'article puis cliquer sur le bouton "read more" pour accéder a la page de l'article ou il pourra consulter tout le contenu.
+La page de blog est pourvue d'une barre de navigation, un titre indiquant le contenu "blog",
+la page de presentation des articles de blog et très simple avec les blocs "article" indiquant la date de publication, ainsi que le créateur de l'article.
+Dans le bloc "blog", l'utilisateur peut lire la description de l'article puis cliquer sur le bouton "read more" pour accéder a la page de l'article ou il pourra consulter tout le contenu.
 Malheuresement pour le blog il n'y a pas de fichier json fonctionnel.
 
 Contact:
